@@ -3,7 +3,7 @@ description: "Build structured workouts and training plans, then add them to you
 user-invocable: true
 ---
 
-# /plan — Build & Schedule Workouts
+# /build — Build & Schedule Workouts
 
 The user will describe what they need (e.g., "plan next week", "build a 4-week block", "create a long run for Saturday", "I need a tempo workout tomorrow").
 
