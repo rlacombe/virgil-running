@@ -10,8 +10,9 @@ user-invocable: true
    - `get_events` for today (oldest=today, newest=today)
    - `get_wellness` for today (oldest=today, newest=today)
    - `get_fitness` for the last 7 days to show trend
+   - `get_athlete` for zone context (HR, pace, power zones)
 3. Display:
-   - **Today's Workout:** Name, type, planned distance/duration. If rest day, say so.
+   - **Today's Workout:** Name, type, planned distance/duration. If the workout has structured steps, show target zones/paces using the athlete's actual zone values. If rest day, say so.
    - **Wellness:** Sleep, HRV, resting HR, fatigue, mood (whatever is available)
    - **Form Status:** Current TSB with label (fresh/neutral/tired/fatigued)
    - **CTL/ATL:** Current values and 7-day trend direction

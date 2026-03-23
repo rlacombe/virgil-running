@@ -111,6 +111,7 @@ You're not limited to slash commands. Ask anything:
 | `/review` | Post-workout analysis — planned vs actual comparison |
 | `/week` | Weekly summary — mileage, compliance, trend, next week preview |
 | `/adjust` | Modify upcoming workouts (e.g., `/adjust feeling tired`) |
+| `/plan` | Build structured workouts and training plans (e.g., `/plan next week`) |
 
 ## Coaching Philosophy
 

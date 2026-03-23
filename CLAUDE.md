@@ -79,12 +79,38 @@ When these sources disagree, note the tension and recommend what fits the athlet
 
 ## Tools
 
-This project has an `intervals-icu` MCP server with 8 tools:
+This project has an `intervals-icu` MCP server with 10 tools:
+- `get_athlete` — athlete profile: HR/pace/power zones, weight, sport settings
 - `get_events` — planned workouts for a date range
 - `get_activities` — completed activities for a date range
 - `get_activity` — single activity detail with intervals
+- `get_activity_streams` — second-by-second time-series data (HR, pace, power, altitude) for an activity
 - `get_wellness` — HRV, sleep, weight, fatigue, mood
 - `get_fitness` — CTL/ATL/TSB fitness metrics
 - `create_event` — create a planned workout
 - `update_event` — modify a planned workout
 - `delete_event` — remove a planned workout
+
+## Workout Description Syntax
+
+When creating structured workouts via `create_event`, use the `description` field with this text format. The Intervals.icu API parses it into structured workout steps.
+
+**Sections:** `Warmup`, `Cooldown`, `Main Set 3x` (repeats)
+**Time:** `1h`, `10m`, `30s`, `1m30`, `5'`, `30"`
+**Distance:** `2km`, `1mi`, `400m`
+**Intensity (running):** `78-82%` (pace %), `95% LTHR`, `Z2`/`Z4` (pace zones), `Z2 HR` (HR zone)
+**Ramps:** `10m ramp 50%-75%`
+**Cadence:** `10m 75% 90rpm`
+
+Example:
+```
+Warmup
+- 15m ramp 60-75%
+
+Main Set 3x
+- 8m 88-92%
+- 3m 60%
+
+Cooldown
+- 10m easy
+```

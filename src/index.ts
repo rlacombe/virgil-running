@@ -136,6 +136,44 @@ server.tool(
   }
 );
 
+server.tool(
+  "get_athlete",
+  "Fetch the athlete's profile: HR zones, pace zones, power zones, weight, sport settings.",
+  {},
+  async () => {
+    try {
+      const data = await fetchAPI(`/athlete/${ATHLETE_ID}`);
+      return ok(data);
+    } catch (e) {
+      return err(e);
+    }
+  }
+);
+
+server.tool(
+  "get_activity_streams",
+  "Fetch second-by-second time-series data (HR, pace, power, altitude, etc.) for an activity.",
+  {
+    id: z.string().describe("Activity ID"),
+    types: z
+      .array(z.string())
+      .optional()
+      .describe(
+        "Stream types to fetch, e.g. heartrate, watts, cadence, altitude, velocity_smooth, distance, time, latlng"
+      ),
+  },
+  async ({ id, types }) => {
+    try {
+      let path = `/activity/${id}/streams.json`;
+      if (types?.length) path += `?types=${types.join(",")}`;
+      const data = await fetchAPI(path);
+      return ok(data);
+    } catch (e) {
+      return err(e);
+    }
+  }
+);
+
 // --- Write tools ---
 
 server.tool(
