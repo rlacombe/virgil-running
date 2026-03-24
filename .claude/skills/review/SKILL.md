@@ -5,7 +5,7 @@ user-invocable: true
 
 # /review — Post-Workout Analysis
 
-1. Get today's date
+1. Get today's date. Read `coaching/workout-types.md` to understand the purpose and targets of the workout type being reviewed. For long runs, also read `coaching/long-runs.md`. For intervals, also read `coaching/aerobic-base.md`.
 2. Fetch in parallel:
    - `get_activities` for the last 3 days (to find the most recent)
    - `get_events` for the last 3 days (to find matching planned workout)
@@ -29,4 +29,4 @@ user-invocable: true
    - **Elevation profile:** Correlate altitude changes with pace/HR to assess climbing efficiency
    Only fetch streams when the analysis would add value — not for every easy run.
 6. Flag any planned-vs-actual deviations > 10%
-7. One-line coaching note on the workout execution
+7. One-line coaching note on the workout execution, grounded in the training science from the knowledge base (e.g., reference HR decoupling thresholds from `coaching/aerobic-base.md`, or pacing principles from `coaching/long-runs.md`)

@@ -5,7 +5,7 @@ user-invocable: true
 
 # /week — Weekly Summary
 
-1. Determine the current week (Monday–Sunday)
+1. Determine the current week (Monday–Sunday). Read `coaching/volume-progression.md` for safe ramp rates and recovery week guidelines, and `coaching/periodization.md` for training phase context.
 2. Fetch in parallel:
    - `get_activities` for this week
    - `get_events` for this week (planned)
@@ -25,4 +25,7 @@ user-invocable: true
    - **Next Week Preview:**
      - List upcoming planned workouts (name, type, distance/duration)
      - Total planned miles
-4. End with a brief coaching note on the week and any adjustments to consider
+4. End with a brief coaching note on the week, grounded in training science:
+   - If volume increased >10%: flag per `coaching/volume-progression.md`
+   - If compliance is low: consider if it signals fatigue per `coaching/recovery-overtraining.md`
+   - Preview next week in context of periodization principles from `coaching/periodization.md`

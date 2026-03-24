@@ -7,7 +7,17 @@ user-invocable: true
 
 The user will describe what they need (e.g., "plan next week", "build a 4-week block", "create a long run for Saturday", "I need a tempo workout tomorrow").
 
-## Step 1: Gather context
+## Step 1: Read knowledge base
+
+Read these coaching files to inform workout design:
+- `coaching/periodization.md` — phase structure, block design, intensity ordering
+- `coaching/workout-types.md` — workout definitions, RPE targets, work:rest ratios
+- `coaching/volume-progression.md` — safe ramp rates, recovery week placement
+- `coaching/long-runs.md` — if building long runs or multi-day plans
+- `coaching/muscular-endurance.md` — if building ME sessions
+- `coaching/strength-training.md` — if scheduling strength work alongside running
+
+## Step 2: Gather context
 
 Fetch in parallel:
 - `get_athlete` — zones (HR, pace, power) for prescribing intensities
@@ -16,7 +26,7 @@ Fetch in parallel:
 - `get_events` for the date range the user is asking about — existing planned workouts
 - `get_wellness` for the last 7 days — sleep, HRV, fatigue trends
 
-## Step 2: Design the plan
+## Step 3: Design the plan
 
 Based on the user's request and the data:
 - Respect current fitness level and volume progression (no >10% weekly increase)
@@ -26,7 +36,7 @@ Based on the user's request and the data:
 - Consider the race date if one is set — work backward from taper
 - Check for existing events in the date range and work around them (or note conflicts)
 
-## Step 3: Write workouts using description syntax
+## Step 4: Write workouts using description syntax
 
 Build each workout's `description` field using the Intervals.icu workout text format. The API parses this to generate structured workout steps.
 
@@ -61,7 +71,7 @@ Cooldown
 - 10m easy
 ```
 
-## Step 4: Present the plan
+## Step 5: Present the plan
 
 Display each day's workout clearly:
 - **Date** — Workout name
@@ -71,13 +81,13 @@ Display each day's workout clearly:
 
 If planning multiple weeks, show a week-by-week summary table first, then the daily detail.
 
-## Step 5: Wait for confirmation
+## Step 6: Wait for confirmation
 
 Explicitly ask: **"Should I add these workouts to your calendar?"**
 
 Do NOT call `create_event` until the user confirms. If they want changes, revise and show again.
 
-## Step 6: Create events
+## Step 7: Create events
 
 After confirmation, for each workout call `create_event` with:
 - `category`: `"WORKOUT"`

@@ -1,7 +1,11 @@
 node_modules/
 dist/
 .env
+.*
+!.gitignore
+!.mcp.json
+!.claude/
+.claude/settings.local.json
 data/
 sleep-routine.md
-.claude/settings.local.json
 ATHLETE.md

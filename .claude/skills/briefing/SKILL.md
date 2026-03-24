@@ -7,7 +7,11 @@ user-invocable: true
 
 Creates a NOTE event on the Intervals.icu calendar with a coaching summary for today. The note appears alongside your planned workout — visible in Intervals.icu and any synced calendar (Google, Apple, Outlook).
 
-## Step 1: Gather data
+## Step 1: Read knowledge base
+
+Read `coaching/recovery-overtraining.md` and `coaching/workout-types.md` to inform the coaching note with relevant training science.
+
+## Step 2: Gather data
 
 Fetch in parallel:
 - `get_events` for today (oldest=today, newest=today) — planned workouts
@@ -15,7 +19,7 @@ Fetch in parallel:
 - `get_fitness` for the last 7 days — CTL/ATL/TSB trend
 - `get_athlete` — zones for context
 
-## Step 2: Write the coaching note
+## Step 3: Write the coaching note
 
 Compose a concise, actionable coaching note. Keep it short — this will be read on a calendar card, not a terminal. Structure:
 
@@ -33,7 +37,7 @@ Guidelines:
 - Keep the entire note under ~150 words — it needs to fit a calendar card
 - No greetings, no sign-offs — just the coaching content
 
-## Step 3: Post to calendar
+## Step 4: Post to calendar
 
 Call `create_event` with:
 - `category`: `"NOTE"`
@@ -41,6 +45,6 @@ Call `create_event` with:
 - `name`: `"Coach's Notes"`
 - `description`: the coaching note from Step 2
 
-## Step 4: Confirm
+## Step 5: Confirm
 
 Tell the user the note has been posted. Mention that it will show up in Intervals.icu and any synced calendars.

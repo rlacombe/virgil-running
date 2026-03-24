@@ -1,6 +1,8 @@
-# Intervals | Ultratrail Coaching Agent
+# Virgil
 
-An AI ultrarunning coach that lives in your terminal. It connects to your [Intervals.icu](https://intervals.icu) account — your training calendar, wellness data, and fitness trends — and uses [established exercise science](#recommended-reading) to help you make the most of your training and prepare for your next trail race. Built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code), it coaches you through natural conversation: reviewing workouts, adjusting plans, flagging risks, and answering questions about your training.
+**Your ultrarunning training companion.** Named after Dante's guide through the underworld — a calm, knowledgeable companion who walks beside you through the hardest passages, explains what you're seeing, and lets you make the decisions. If you've ever been at mile 80 of a 100-miler at 3am, you know that's not a metaphor.
+
+Virgil connects to your [Intervals.icu](https://intervals.icu) account — your training calendar, wellness data, and fitness trends — and uses [established exercise science](#recommended-reading) to help you make the most of your training and prepare for your next trail race. Built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code), Virgil works through natural conversation: reviewing workouts, adjusting plans, flagging risks, and answering questions about your training.
 
 ## Why This Exists
 
@@ -11,7 +13,7 @@ But most recreational athletes don't have access to a coach — or, if they do, 
 This project aims to bridge that gap: a tool that reads your training data, applies established coaching frameworks, and talks you through what to do on a Tuesday morning when your HRV is down and your schedule just changed.
 
 > [!IMPORTANT]
-> **This is not a replacement for a human coach.** A good coach brings experience, intuition, and a relationship that no AI can replicate. If you can work with one, you should.
+> **This is not a replacement for a human coach.** A good coach brings experience, intuition, and a relationship that no tool can replicate. If you can work with one, you should — see [Working with a Coach](#working-with-a-coach) below.
 
 This tool can complement that relationship by handling the day-to-day details between sessions. For the many runners who train alone, it offers something better than a static plan: science-based guidance that adapts to how your training is actually going.
 
@@ -22,12 +24,12 @@ We encourage you to [buy the books](#recommended-reading). They're excellent, th
 You need a [Claude Code](https://docs.anthropic.com/en/docs/claude-code) account and an [Intervals.icu](https://intervals.icu) account connected to your sports watch or training device (e.g. Garmin, Suunto, COROS, Apple Watch). Then:
 
 ```bash
-git clone https://github.com/rlacombe/intervals-coaching-agent.git
-cd intervals-coaching-agent
+git clone https://github.com/rlacombe/virgil-running.git
+cd virgil-running
 claude
 ```
 
-Type `/setup` and the coach will walk you through everything — connecting your Intervals.icu account and building your athlete profile.
+Type `/setup` and your companion will walk you through everything — connecting your Intervals.icu account and building your athlete profile.
 
 Your personal data is stored in `ATHLETE.md` (gitignored) so it stays local and won't be overwritten when you `git pull` updates. The coaching framework in `CLAUDE.md` can be updated freely.
 
@@ -94,15 +96,54 @@ hill repeats Thursday. Here's what I'd do:
 Want me to update the calendar?
 ```
 
-### Just talking to your coach
+### Understanding your training
+
+```
+> /why am I doing VO2max intervals before building my base?
+
+Two coaches approach this differently:
+
+Scott Johnston says base first — build your aerobic engine for months
+before adding intensity. His logic: "There is no shortcut to building
+the aerobic base." Most amateurs have aerobic deficiency syndrome and
+need Z2 volume before anything else.
+
+Jason Koop says VO2max first — it's the least specific workout for
+ultras, so it goes furthest from race day. His logic: raising the
+ceiling lifts everything below it. "Targeting VO2max has a greater
+lifting effect on lactate-threshold fitness than training at aerobic
+intensities has on lifting VO2max."
+
+Your AeT/AnT spread is 12% — that suggests your aerobic base could
+use work. Johnston's approach may be the better fit right now. Once
+that spread drops below 10%, intensity becomes more productive.
+```
+
+### Race-day planning
+
+```
+> /race
+
+Race: Canyons 100K — April 26, 2025
+Fitness: CTL 48, TSB trending to +6 by race day (fresh)
+
+Pacing: 14:30-15:00 overall, 18:00/mi climbs, 10:30/mi descents
+Nutrition: 260 cal/hr, 60g carbs/hr, 600mg sodium/L
+Mental: Associate on climbs and technical. Dissociate on fire roads.
+ADAPT framework if things go sideways.
+
+[Full aid station table, gear plan, and cutoff analysis...]
+```
+
+### Just ask
 
 You're not limited to slash commands. Ask anything:
 
 - *"Am I ready for a 50K in October?"*
-- *"Break down my race day nutrition plan"*
 - *"Should I run or cross-train tomorrow?"*
 - *"What's my vert progression been like this month?"*
-- *"I have a work trip next week — adjust my schedule"*
+- *"Is my HRV trend concerning?"*
+- *"What does Scott Johnston think about weighted hiking?"*
 
 ## Skills
 
@@ -115,26 +156,46 @@ You're not limited to slash commands. Ask anything:
 | `/adjust` | Modify upcoming workouts (e.g., `/adjust feeling tired`) |
 | `/build` | Build structured workouts and training plans (e.g., `/build next week`) |
 | `/briefing` | Post a coaching note to your Intervals.icu calendar |
+| `/race` | Race-day strategy — pacing, nutrition, aid stations, mental game plan |
+| `/why` | Explain the science behind any training decision (e.g., `/why VO2max intervals`) |
+| `/check` | Deep health audit — overtraining signals, volume trends, injury risk |
 
-## Coaching Philosophy
+## Training Philosophy
 
-The coach follows three principles:
+Three principles guide every recommendation:
 
-1. **Health before performance.** Long-term health always comes first. The coach will flag overtraining, under-recovery, and injury risk — even if it means recommending DNS.
-2. **Push hard when ready.** Within the bounds of health, the coach is direct and demanding. Easy days easy, hard days hard.
-3. **Evidence over tradition.** Recommendations cite physiology and established frameworks.
+1. **Health before performance.** Long-term health always comes first. Overtraining, under-recovery, and injury risk get flagged — even if it means recommending DNS.
+2. **Push hard when ready.** Within the bounds of health, the companion is direct and demanding. Easy days easy, hard days hard.
+3. **Evidence over tradition.** Recommendations cite physiology and established frameworks. When experts disagree, both approaches are presented with reasoning — you choose.
+
+### Knowledge Base
+
+The `coaching/` directory contains 16 reference docs covering training science topics — from aerobic base and periodization to race execution and injury prevention. Each doc synthesizes positions from Johnston, Koop, and Magness with specific protocols, quotes, and decision frameworks. These are read when making recommendations.
 
 ## Recommended Reading
 
-The coaching framework draws from these books. We recommend them for any ultrarunner who wants to understand the science behind their training:
+The training framework draws from these books. We recommend them for any ultrarunner who wants to understand the science behind their training:
 
-- **Training for the Uphill Athlete** by Scott Johnston, Steve House & Kilian Jornet — [Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841) | [uphillathlete.com](https://uphillathlete.com)
-- **Training Essentials for Ultrarunners** by Jason Koop — [Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566) | [trainright.com](https://trainright.com)
-- **Science of Running** by Steve Magness — [Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946) | [scienceofrunning.com](https://scienceofrunning.com)
+- **Training for the Uphill Athlete** by Scott Johnston, Steve House & Kilian Jornet — [Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841) | Coaching: [Evoke Endurance](https://evokeendurance.com) (Johnston) · [Uphill Athlete](https://uphillathlete.com)
+- **Training Essentials for Ultrarunners** by Jason Koop — [Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566) | Coaching: [Jason Koop](https://jasonkoop.com) · [CTS](https://trainright.com)
+- **Science of Running** by Steve Magness — [Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946) | [stevemagness.com](https://stevemagness.com) · [scienceofrunning.com](https://scienceofrunning.com)
 
-We are not affiliated with any of these authors or organizations.
+We are not affiliated with any of these authors or organizations. If you can work with them directly, you should — this tool is not a substitute for a real coaching relationship.
 
 **[Intervals.icu](https://intervals.icu)** is the training platform that powers the data layer. It's free, but please consider supporting it — it's an incredible tool built by a small team.
+
+## Working with a Coach
+
+The best thing you can do for your running is work with a real coach. A good coach sees things data can't capture — your form, your confidence, the way you carry stress — and builds a relationship that adapts to who you are, not just what your numbers say.
+
+This tool is designed to complement that relationship, not replace it. Between coaching sessions, it can handle the daily details: adjusting a workout when your schedule changes, reviewing an activity, or explaining why a training block is structured the way it is. Some coaches may find it useful as a tool in their own practice.
+
+**If you're a coach** and you're curious about how this tool could support your athletes, please [reach out](https://github.com/rlacombe/intervals-coaching-agent/issues) — we'd love to hear from you.
+
+**If you're looking for a coach**, the authors whose work powers this project all offer coaching services:
+- [Evoke Endurance](https://evokeendurance.com) (Scott Johnston)
+- [Jason Koop / CTS](https://jasonkoop.com)
+- [Uphill Athlete](https://uphillathlete.com)
 
 ## Disclaimer
 
