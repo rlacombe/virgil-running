@@ -385,3 +385,18 @@ professional for any pain, injury, or health concern.**
    Expect longer recovery between hard sessions. Magness: increase emphasis on
    speed/strength training to combat age-related fast-twitch fiber loss, but with
    appropriate recovery.
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Science of Running* — Steve Magness ([Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946))
+
+### Articles & Podcasts
+- [Common Trail Running Injuries and How to Avoid Them](https://trainright.com/trail-running-injuries-and-how-to-avoid-them/) — Common injuries and prevention strategies (CTS)
+- [Foot and Hip Mobility for Trail Runners](https://trainright.com/foot-and-hip-mobility-exercises-for-trail-runners-and-ultrarunners/) — 5-minute mobility routine for feet and hips (CTS)
+- [Ultrarunning Injury Recovery Lessons](https://trainright.com/ultrarunning-injury-recovery-lessons-from-a-year-long-comeback/) — Lessons from a year-long comeback (CTS)
+- [Dealing with Injury](https://uphillathlete.com/recovery/dealing-with-injury/) — Managing overuse and trauma injuries, early intervention (Uphill Athlete)
+- [Strength Training for the Mountain Athlete](https://uphillathlete.com/strength-training/strength-training-for-the-mountain-athlete/) — Functional strength as injury prevention (Uphill Athlete)
+- [Hill Sprints and Running Form](https://www.scienceofrunning.com/2010/01/video-hill-sprints-and-running-for.html) — Neuromuscular activation and form through hill sprints (Science of Running)

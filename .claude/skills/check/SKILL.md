@@ -10,10 +10,10 @@ Goes deeper than `/today`'s daily snapshot. Analyzes multi-week trends to flag o
 ## Step 1: Read knowledge base
 
 Read these coaching files for detection criteria and thresholds:
-- `coaching/recovery-overtraining.md` — FOR/NFOR/OTS stages, detection methods, warning signs
-- `coaching/injury-prevention.md` — red flags, volume ramp limits, return protocols
-- `coaching/volume-progression.md` — 10% rule, build:recovery ratios, CTL ramp rates
-- `coaching/age-gender.md` — age/gender-specific recovery considerations
+- `knowledge/recovery-overtraining.md` — FOR/NFOR/OTS stages, detection methods, warning signs
+- `knowledge/injury-prevention.md` — red flags, volume ramp limits, return protocols
+- `knowledge/volume-progression.md` — 10% rule, build:recovery ratios, CTL ramp rates
+- `knowledge/age-gender.md` — age/gender-specific recovery considerations
 
 ## Step 2: Gather data
 
@@ -41,7 +41,7 @@ Read `ATHLETE.md` for injury history, age, and known weaknesses.
 - Fatigue/mood: worsening trend over 7+ days
 
 ### Overtraining Risk Assessment
-Using the FOR → NFOR → OTS framework from `coaching/recovery-overtraining.md`:
+Using the FOR → NFOR → OTS framework from `knowledge/recovery-overtraining.md`:
 - Steve House's 3 warning signs: slow warmup, poor sleep, suspected injury (2+ = immediate rest)
 - Performance decline: are recent workouts showing pace/HR regression?
 - Compliance: missed workouts may indicate fatigue-driven avoidance

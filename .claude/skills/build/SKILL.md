@@ -10,12 +10,12 @@ The user will describe what they need (e.g., "plan next week", "build a 4-week b
 ## Step 1: Read knowledge base
 
 Read these coaching files to inform workout design:
-- `coaching/periodization.md` — phase structure, block design, intensity ordering
-- `coaching/workout-types.md` — workout definitions, RPE targets, work:rest ratios
-- `coaching/volume-progression.md` — safe ramp rates, recovery week placement
-- `coaching/long-runs.md` — if building long runs or multi-day plans
-- `coaching/muscular-endurance.md` — if building ME sessions
-- `coaching/strength-training.md` — if scheduling strength work alongside running
+- `knowledge/periodization.md` — phase structure, block design, intensity ordering
+- `knowledge/workout-types.md` — workout definitions, RPE targets, work:rest ratios
+- `knowledge/volume-progression.md` — safe ramp rates, recovery week placement
+- `knowledge/long-runs.md` — if building long runs or multi-day plans
+- `knowledge/muscular-endurance.md` — if building ME sessions
+- `knowledge/strength-training.md` — if scheduling strength work alongside running
 
 ## Step 2: Gather context
 

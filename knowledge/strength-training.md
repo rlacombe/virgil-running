@@ -204,3 +204,17 @@ Five movement patterns:
 
 5. **Is the athlete over 40?**
    - Yes: Strength training shifts from optional to essential. "For aging athletes, strength training isn't just corrective or ergogenic, it's essential for general health and well-being." (Koop, Ch. 11) Minimum 2x/week year-round, even at the expense of some running volume. Focus on heavy compound movements to counter muscle mass loss.
+
+## Sources & Further Reading
+
+### Books
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Science of Running* — Steve Magness ([Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946))
+
+### Articles & Podcasts
+- [Strength Training for the Mountain Athlete](https://uphillathlete.com/strength-training/strength-training-for-the-mountain-athlete/) — Building functional strength for mountain sports (Uphill Athlete)
+- [Strength Training for Trail Runners](https://uphillathlete.com/podcast/training-for-trail-running-strength-training/) — Strength phases and favorite exercises for trail runners (Uphill Athlete Podcast)
+- [Strength Training for Ultramarathon Runners](https://trainright.com/strength-training-ultramarathon-runners/) — Why strength training alone won't make you faster — and what it will do (CTS)
+- [How to Implement Heavy Strength Training for Runners](https://trainright.com/how-to-implement-heavy-strength-training-for-runners/) — Incorporating heavy strength training into running programs (CTS)
+- [Hill Sprints and Running Form](https://www.scienceofrunning.com/2010/01/video-hill-sprints-and-running-for.html) — Neuromuscular activation and injury prevention through hill sprints (Science of Running)

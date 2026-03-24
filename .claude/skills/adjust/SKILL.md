@@ -8,10 +8,10 @@ user-invocable: true
 The user will provide a reason (e.g., "feeling tired", "knee is sore", "need to swap Thursday and Friday").
 
 0. Read relevant knowledge base files based on the reason:
-   - Fatigue/soreness: `coaching/recovery-overtraining.md`, `coaching/injury-prevention.md`
-   - Schedule change: `coaching/periodization.md` (preserve weekly structure principles)
-   - Feeling great: `coaching/volume-progression.md` (safe ramp limits)
-   - Pain/injury concern: `coaching/injury-prevention.md` (always recommend medical consultation first)
+   - Fatigue/soreness: `knowledge/recovery-overtraining.md`, `knowledge/injury-prevention.md`
+   - Schedule change: `knowledge/periodization.md` (preserve weekly structure principles)
+   - Feeling great: `knowledge/volume-progression.md` (safe ramp limits)
+   - Pain/injury concern: `knowledge/injury-prevention.md` (always recommend medical consultation first)
 1. Fetch in parallel:
    - `get_wellness` for the last 3 days
    - `get_fitness` for the last 7 days

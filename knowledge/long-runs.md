@@ -150,3 +150,13 @@ Each discipline has distinct GRFs, EMG patterns, and joint angles. Training must
 - If GI issues emerge: reduce intensity, increase gut training frequency (Koop)
 - If athlete consistently cannot complete planned duration: reduce target by 20%, rebuild gradually
 - Track workout grades (Johnston A-F system): consistent C grades on long runs = fatigue accumulation, insert recovery week
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+
+### Articles & Podcasts
+- [How Long Should Your Longest Run Be?](https://trainright.com/longest-run-ultramarathon-training/) — Why runs beyond 4 hours still pack adaptive benefit (CTS)
+- [Concentrated Training Volume for Ultrarunners](https://trainright.com/concentrated-training-volume-for-ultrarunners/) — Making long days longer for greater training stress (CTS)

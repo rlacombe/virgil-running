@@ -231,3 +231,18 @@ Apply Johnston's A-F grading system:
 - Transition periods: 2-4 weeks away from structured running after major races or seasons
 - Do not increase volume AND intensity in the same week
 - Do not increase any variable by more than 10% per week for more than 3 consecutive weeks
+
+## Sources & Further Reading
+
+### Books
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Science of Running* — Steve Magness ([Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946))
+
+### Articles & Podcasts
+- [Overtraining: Recovery and Symptoms Explained](https://uphillathlete.com/recovery/overtraining-recovery-and-symptoms-explained/) — FOR vs NFOR vs OTS: stages and recovery (Uphill Athlete)
+- [Overtraining Symptoms in Mountain Athletes](https://uphillathlete.com/recovery/overtraining-symptoms-in-mountain-athletes/) — Performance loss, chronic fatigue, mood changes, immune suppression (Uphill Athlete)
+- [Tips to Aid Recovery](https://uphillathlete.com/aerobic-training/tips-to-aid-recovery/) — Sleep, nutrition, self-massage, and active recovery strategies (Uphill Athlete)
+- [Overtraining: Three Strategies to Reset Your Body](https://www.scienceofrunning.com/2019/04/overtraining-three-strategies-to-reset-your-body.html) — Practical strategies to reset when overtraining occurs (Science of Running)
+- [Signatures of Fatigue](https://www.scienceofrunning.com/2018/02/signatures-of-fatigue-why-fatigue-is-your-best-feedback.html) — Using fatigue signs as coaching feedback (Science of Running)
+- [The Role of Stress Relief in Training and Recovery](https://trainright.com/the-role-of-stress-relief-in-training-and-recovery/) — How psychological stress impacts athletic recovery (CTS)

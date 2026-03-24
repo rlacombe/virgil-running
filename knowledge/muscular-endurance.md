@@ -171,3 +171,16 @@ Complete all 6 sets of each exercise. No more than 2-min rest between exercises.
    - No improvement week to week = likely doing too much, not too little (Johnston).
    - Persistent heavy legs beyond 72 hours post-ME session = reduce load or increase recovery.
    - Falling HR during hard uphill efforts (despite increasing effort) = frontier fiber fatigue. Sign that ME training is addressing the right limiter.
+
+## Sources & Further Reading
+
+### Books
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+
+### Articles & Podcasts
+- [What Is Muscular Endurance and Why It Matters](https://uphillathlete.com/aerobic-training/vertical-beast-mode-what-is-muscular-endurance-why-it-is-important-for-any-alpinist-or-mountaineer-and-how-do-you-train-it/) — ME defined: maintaining high contractile force across many repetitions (Uphill Athlete)
+- [Exercises for Muscular Endurance](https://uphillathlete.com/aerobic-training/exercises-for-muscular-endurance/) — ME exercise examples: squats, pull-ups, planks, resistance training (Uphill Athlete)
+- [At-Home Muscular Endurance Workout with Progression](https://uphillathlete.com/strength-training/at-home-muscular-endurance-workout-with-progression/) — Progressive at-home ME workout by Steve House (Uphill Athlete)
+- [Muscular Endurance for Mountain Athletes](https://uphillathlete.com/podcast/muscular-endurance-for-mountain-athletes-with-coach-scott-johnston/) — ME training principles with Scott Johnston (Uphill Athlete Podcast)
+- [Muscular Endurance for Ultrarunners: Does High-Rep Strength Training Work?](https://trainright.com/muscular-endurance-ultrarunners-high-rep-strength-training/) — Scientific evidence for high-rep strength training in ultras (CTS)

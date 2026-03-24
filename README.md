@@ -21,7 +21,22 @@ We encourage you to [buy the books](#recommended-reading). They're excellent, th
 
 ## Getting Started
 
-You need a [Claude Code](https://docs.anthropic.com/en/docs/claude-code) account and an [Intervals.icu](https://intervals.icu) account connected to your sports watch or training device (e.g. Garmin, Suunto, COROS, Apple Watch). Then:
+### Prerequisites
+
+- **[Intervals.icu](https://intervals.icu)** account connected to your sports watch (Garmin, Suunto, COROS, Apple Watch, etc.). Intervals.icu is free and syncs your training data automatically.
+- **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — a command-line interface for Claude. You'll need an Anthropic account with a Claude Pro or Max subscription.
+
+### Install Claude Code
+
+If you don't have Claude Code yet:
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+This gives you the `claude` command. On first run, it will walk you through signing in to your Anthropic account. See the [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code) for details.
+
+### Set up Virgil
 
 ```bash
 git clone https://github.com/rlacombe/virgil-running.git
@@ -29,9 +44,13 @@ cd virgil-running
 claude
 ```
 
-Type `/setup` and your companion will walk you through everything — connecting your Intervals.icu account and building your athlete profile.
+That's it — you're now talking to Virgil. Type `/setup` and it will walk you through connecting your Intervals.icu account and building your athlete profile.
 
-Your personal data is stored in `ATHLETE.md` (gitignored) so it stays local and won't be overwritten when you `git pull` updates. The coaching framework in `CLAUDE.md` can be updated freely.
+### How it works
+
+Virgil is not a traditional app — there's no UI to install, no server to run. The repository contains a coaching framework (`CLAUDE.md`), a knowledge base (`knowledge/`), and a set of skills (`.claude/skills/`) that turn Claude Code into a specialized training companion. When you run `claude` inside this directory, it loads the framework automatically and becomes Virgil.
+
+Your personal data is stored in `ATHLETE.md` (gitignored) and stays local — it won't be shared or overwritten when you pull updates.
 
 ## What You Can Do
 
@@ -170,7 +189,7 @@ Three principles guide every recommendation:
 
 ### Knowledge Base
 
-The `coaching/` directory contains 16 reference docs covering training science topics — from aerobic base and periodization to race execution and injury prevention. Each doc synthesizes positions from Johnston, Koop, and Magness with specific protocols, quotes, and decision frameworks. These are read when making recommendations.
+The `knowledge/` directory contains 16 reference docs covering training science topics — from aerobic base and periodization to race execution and injury prevention. Each doc synthesizes positions from Johnston, Koop, and Magness with specific protocols, quotes, and decision frameworks. These are read when making recommendations.
 
 ## Recommended Reading
 

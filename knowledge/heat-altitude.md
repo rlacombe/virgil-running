@@ -223,3 +223,17 @@ Heat and altitude are environmental stressors that sit near the top of Koop's hi
 - Hydration becomes doubly important -- both heat and altitude increase fluid requirements
 - Expect combined performance decrement of 10-20% compared to sea-level, mild conditions
 - Iron status is critical -- get tested 3 months out
+
+## Sources & Further Reading
+
+### Books
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+
+### Articles & Podcasts
+- [Cross-Adaptation: Heat Training for Altitude](https://uphillathlete.com/mountaineering/high-altitude-heat-training-hypoxia-adaptation/) — How heat exposure carries over to altitude performance (Uphill Athlete)
+- [Understanding Altitude for Mountain Athletes](https://uphillathlete.com/mountaineering/understanding-altitude-an-overview-for-mountain-athletes/) — Altitude zones, acclimatization, and warning signs (Uphill Athlete)
+- [Does Heat Stress Boost Performance Better Than Altitude Camp?](https://uphillathlete.com/aerobic-training/does-heat-stress-boost-performance-better-than-altitude-camp/) — Heat training vs altitude camps for hemoglobin mass gains (Uphill Athlete)
+- [Ultrarunners' Heat Acclimation Cheat Sheet](https://trainright.com/ultrarunners-heat-acclimation-cheat-sheet/) — Research-backed heat acclimation strategies (CTS)
+- [Heat Acclimation: When to Start and How Long It Takes](https://trainright.com/heat-acclimation-when-to-start-and-how-long-it-takes/) — Optimal timing for heat adaptation (CTS)
+- [Training for Altitude and the Heat](https://www.jasonkoop.com/podcast/training-for-altitude-and-the-heat-with-lindsay-golich) — Cooling strategies and acclimatization methods (KoopCast)

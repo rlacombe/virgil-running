@@ -307,3 +307,18 @@ a smooth transition into the recovery phase.
    | 13-18 | Base cont'd: add Z3 if 10% test passes, ME work | SSR block (3-6 wk) with recovery | Pre-competition: shift to support paces, specific endurance |
    | 19-22 | Sport-Specific: back-to-backs, terrain matching | Race-specific: high volume, terrain matching | Competition: specific endurance, reduce density |
    | 23-24 | Taper: 30%/wk volume reduction | Fast decay taper: 50% → 25% → <20% | Sharpen: maintain volume, reduce hard workout density |
+
+## Sources & Further Reading
+
+### Books
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Science of Running* — Steve Magness ([Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946))
+
+### Articles & Podcasts
+- [Transition Period Training](https://uphillathlete.com/aerobic-training/transition-period-training-tactical/) — The transition period as the foundational phase (Uphill Athlete)
+- [Hierarchy of Ultramarathon Training Needs](https://trainright.com/hierarchy-ultramarathon-training-needs-jason-koop/) — Organizing training priorities based on Maslow/Seiler framework (CTS)
+- [Ultrarunning Long-Range Plan in 3 Steps](https://trainright.com/ultrarunning-long-range-plan-3-steps/) — Seasonal planning framework for ultrarunners (CTS)
+- [The Ultimate Post-Season Guide for Ultrarunners](https://trainright.com/ultimate-post-season-guide-for-ultrarunners/) — Post-season recovery and preparation strategies (CTS)
+- [Build, Maintain, Connect](https://www.scienceofrunning.com/2018/08/the-simple-principle-of-training-build-maintain-connect.html) — Simple training framework: develop, preserve, integrate (Science of Running)
+- [Arthur Lydiard: The Father of Modern Training](https://www.scienceofrunning.com/2016/11/arthur-lydiard-the-father-of-modern-training.html) — Lydiard's methods and common misconceptions (Science of Running)

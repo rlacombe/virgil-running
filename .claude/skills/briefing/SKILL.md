@@ -9,7 +9,7 @@ Creates a NOTE event on the Intervals.icu calendar with a coaching summary for t
 
 ## Step 1: Read knowledge base
 
-Read `coaching/recovery-overtraining.md` and `coaching/workout-types.md` to inform the coaching note with relevant training science.
+Read `knowledge/recovery-overtraining.md` and `knowledge/workout-types.md` to inform the coaching note with relevant training science.
 
 ## Step 2: Gather data
 

@@ -271,3 +271,16 @@ training provides robust, long-lasting protection through the repeated bout effe
    massage are appropriate. Johnston recommends easy Z1 only for several days. Magness
    warns against workouts that break down form further, as this creates negative
    motor programming.
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+
+### Articles & Podcasts
+- [Eccentric Strength Training for Downhill Running](https://trainright.com/eccentric-strength-training-for-improved-downhill-running-performance/) — Eccentric exercises for runners with limited hill access (CTS)
+- [Downhill Running: Go Faster and Hurt Less](https://trainright.com/downhill-running-training-go-faster-hurt-less/) — Improving downhill speed while reducing leg strain (CTS)
+- [Should You Include Downhill Repeats?](https://trainright.com/include-downhill-repeats-ultrarunning-training/) — Koop's case against dedicated downhill repeat sessions (CTS)
+- [Utilizing the Repeated Bout Effect](https://www.jasonkoop.com/podcast/utilizing-the-repeated-bout-effect-for-downhill-running-with-arash-khassetarash) — Timing a single downhill bout ~3 weeks pre-race (KoopCast)
+- [Downhill Running Technique](https://uphillathlete.com/trail-running/downhill-running-technique/) — Core engagement, eyes ahead, quick cadence (Uphill Athlete)

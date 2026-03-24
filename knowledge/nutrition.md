@@ -290,3 +290,17 @@ wrong guarantees them — GI distress is the leading cause of race abandonment.
    Monitor menstrual function as a canary for RED-S (Koop). Already efficient fat
    burners — LCHF diets offer diminishing returns (Koop, Ch. 2). Focus on adequate
    energy availability over dietary restriction.
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+
+### Articles & Podcasts
+- [Bullseye Nutrition Plan for Ultramarathon Runners](https://trainright.com/bullseye-nutrition-plan-ultramarathon-runners/) — Koop's streamlined nutrition strategy for ultras (CTS)
+- [ISSN Position Stand on Ultrarunning Nutrition — Part 1](https://trainright.com/ultrarunning-international-society-sports-nutrition-position-stand/) — Caloric requirements, high-carb diet, and gut training (CTS)
+- [ISSN Position Stand on Ultrarunning Nutrition — Part 2](https://trainright.com/ultrarunning-international-society-sports-nutrition-position-stand-part2/) — Race-day execution: sodium targets and carb intake (CTS)
+- [Nutritional Challenges in Ultrarunning](https://trainright.com/nutritional-challenges-ultrarunning-overcome/) — Five fueling challenges and practical solutions (CTS)
+- [Sodium Supplementation for Ultrarunning](https://www.jasonkoop.com/podcast/sodium-supplementation-for-ultrarunning-with-alan-mccubbin-phd) — Sweat testing and when to supplement sodium (KoopCast)
+- [Nutrition Advice for Trail Running](https://uphillathlete.com/podcast/training-for-trail-running-nutrition-advice-with-rd-rebecca-dent/) — Fueling strategies and carbohydrate guidelines (Uphill Athlete Podcast)

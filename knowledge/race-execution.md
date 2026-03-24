@@ -167,3 +167,13 @@ Race-day execution separates finishers from DNFs and good races from great ones.
 - Rehydrate gradually
 - Do not make race decisions (DNS for next race, signing up for another) for at least 48 hours
 - Debrief: what worked, what failed, what to adjust for next time
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+
+### Articles & Podcasts
+- [Ultramarathon Pacing: Staying in the Moment](https://trainright.com/ultramarathon-pacing-strategies-staying-in-the-moment/) — Why present-focus works better than forecasting for ultra pacing (CTS)
+- [4 Simple, Smart Ultramarathon Pacing Tips](https://trainright.com/4-simple-smart-ultramarathon-pacing-tips/) — Practical pacing strategies (CTS)
+- [Developing Durability for Ultrarunners](https://www.jasonkoop.com/podcast/developing-durability-for-ultrarunners-with-nicolas-berger-phd) — Muscular fatigue, substrate utilization, and pacing (KoopCast)

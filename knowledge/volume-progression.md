@@ -161,3 +161,16 @@ The minimum sustained volume needed for successful race completion at a given di
    - 50K: Comfortable at 25 mi/week before starting plan. Peak week = 50-55 mi.
    - 100K: Comfortable at 50K loads. Peak week = 74-80 mi.
    - 100-mile: Comfortable at 100K loads. Peak week = 90-100 mi.
+
+## Sources & Further Reading
+
+### Books
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+
+### Articles & Podcasts
+- [When to Add Intensity Training](https://uphillathlete.com/aerobic-training/when-to-add-intensity-training/) — The 10% test and safe volume progression principles (Uphill Athlete)
+- [Concentrated Training Volume for Ultrarunners](https://trainright.com/concentrated-training-volume-for-ultrarunners/) — Rearranging training to increase stress from existing weekly hours (CTS)
+- [Ultrarunning Spring Volume Training](https://trainright.com/ultrarunning-spring-volume-training/) — Three-phase approach to building volume (CTS)
+- [Double-Day Training for Ultrarunners](https://trainright.com/double-day-training-ultrarunner/) — Do's and don'ts of double-day training (CTS)
+- [Ultramarathon Training Time Required](https://trainright.com/ultramarathon-training-time-required/) — Minimum training time requirements by race distance (CTS)

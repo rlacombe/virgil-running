@@ -156,3 +156,17 @@ Note: This was a heavy race year; younger years were more heavily weighted to ba
    - Rapid HR rise in first 10-15 min of easy running
    - Pace at AeT is slower than expected for the athlete's race history
    - At moderate fatigue, speed is limited by legs, not breathing (suggests muscles can't utilize delivered oxygen -- Johnston/Evoke)
+
+## Sources & Further Reading
+
+### Books
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+- *Science of Running* — Steve Magness ([Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946))
+
+### Articles & Podcasts
+- [Aerobic Deficiency Syndrome](https://uphillathlete.com/aerobic-training/aerobic-deficiency-syndrome/) — Causes, symptoms, and how to rebuild aerobic capacity (Uphill Athlete)
+- [Aerobic & Anaerobic Threshold Self-Assessment](https://uphillathlete.com/aerobic-training/aerobic-anaerobic-threshold-self-assessment/) — Self-assessment guide for determining AeT and AnT (Uphill Athlete)
+- [DIY Guide to Determine Your Aerobic Threshold Outdoors](https://uphillathlete.com/aerobic-training/step-by-step-diy-guide-to-determine-your-aerobic-threshold-outdoors/) — Practical outdoor test for AeT heart rate (Uphill Athlete)
+- [When to Add Intensity Training](https://uphillathlete.com/aerobic-training/when-to-add-intensity-training/) — The "10% Test" for readiness to add high-intensity work (Uphill Athlete)
+- [How to Interpret Your Test Results](https://uphillathlete.com/aerobic-training/getting-tested-part-2-how-to-interpret-your-test-results/) — Interpreting metabolic and gas exchange test results (Uphill Athlete)
+- [Base Training Is Not Just Easy Running](https://www.scienceofrunning.com/2010/01/base-training-is-not-just-easy-running.html) — Why base phases should include varied stimuli, not just easy running (Science of Running)

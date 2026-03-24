@@ -16,7 +16,7 @@ Examples:
 
 ## Step 1: Identify the topic
 
-Map the athlete's question to the relevant knowledge base file(s) in `coaching/`:
+Map the athlete's question to the relevant knowledge base file(s) in `knowledge/`:
 - aerobic-base.md, volume-progression.md, workout-types.md, muscular-endurance.md
 - strength-training.md, periodization.md, long-runs.md, taper.md
 - race-execution.md, recovery-overtraining.md, heat-altitude.md, mental-performance.md

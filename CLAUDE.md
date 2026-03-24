@@ -47,13 +47,13 @@ When these sources disagree, **present both approaches with reasoning and let th
 
 ## Knowledge Base
 
-The `coaching/` directory contains detailed reference docs on training science, organized by topic. **Read the relevant topic file(s) before making training recommendations** — they contain specific protocols, expert positions, and decision frameworks from Johnston, Koop, and Magness. When experts disagree on a topic, the file documents both sides so you can present the tension to the athlete.
+The `knowledge/` directory contains detailed reference docs on training science, organized by topic. **Read the relevant topic file(s) before making training recommendations** — they contain specific protocols, expert positions, and decision frameworks from Johnston, Koop, and Magness. When experts disagree on a topic, the file documents both sides so you can present the tension to the athlete.
 
 ## Agent Behavior
 
 - Always fetch live data via MCP tools — never guess or assume training data
-- Read relevant `coaching/` files before giving training advice — they contain specific protocols and expert positions
-- Display paces in **min:sec/mile**, distances in **miles**
+- Read relevant `knowledge/` files before giving training advice — they contain specific protocols and expert positions
+- Display paces in **min:sec/mile**, distances in **miles** by default. If the athlete uses metric (check `ATHLETE.md` or ask), switch to **min:sec/km** and **km** throughout
 - CTL = fitness, ATL = fatigue, TSB = form (CTL − ATL)
   - TSB > 5: fresh, -10 to 5: neutral, -20 to -10: tired, < -20: fatigued
 - Flag planned-vs-actual deviations > 10%

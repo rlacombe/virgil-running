@@ -179,3 +179,14 @@ The taper is the final phase of training before a goal race, designed to shed ac
 - **Nutrition rehearsal:** Last long run (typically 2-3 weeks out) is the final opportunity to rehearse race nutrition. Do not change nutrition plan after this point.
 - **Travel:** Arrive at race location as early as practical. Do not add travel stress in the final 48 hours if avoidable.
 - **Frequent racers:** Athletes racing every 3-6 weeks cannot fully taper each time. Classify races honestly -- only 1-3 A races per year deserve a full taper. (Johnston, Magness)
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+
+### Articles & Podcasts
+- [Tapering for a Race: What to Do](https://uphillathlete.com/trail-running/tapering-for-race-event-what-to-do/) — Volume cuts, taper vs sharpening, and the psychology of reduced training (Uphill Athlete)
+- [Preventing Taper Tantrums](https://trainright.com/tapering-ultrarunning-prevent-taper-tantrum/) — Psychological and physical challenges during taper (CTS)
+- [Tapering for Ultrarunning with Iñigo Mujika](https://www.jasonkoop.com/podcast/tapering-for-ultrarunning-with-inigo-mujika-phd) — Interview with taper expert on individualized approaches (KoopCast)

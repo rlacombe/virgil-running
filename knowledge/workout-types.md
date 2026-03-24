@@ -185,3 +185,16 @@ The three primary ultrarunning coaches use different naming conventions and inte
    - Koop: "You will not learn to play Chopin by practicing 'Chopsticks.'" (Ch. 2) -- train on race-similar terrain.
    - Practice walking in training -- "Something I don't think enough runners do." (Koop, Ch. 5)
    - Flat ground walk/run transition: ~13:30-14:00 min/mi. Below this, walking is more economical.
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Science of Running* — Steve Magness ([Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946))
+
+### Articles & Podcasts
+- [12 Running Workouts for Ultramarathon Success](https://trainright.com/12-running-workouts-for-ultramarathon-success/) — Key interval workouts for ultra training (CTS)
+- [Decoding Ultramarathon Interval Workouts](https://trainright.com/decoding-ultramarathon-interval-workouts/) — How to structure effective intervals for ultras (CTS)
+- [Mastering Interval Training for Ultrarunners](https://www.jasonkoop.com/podcast/mastering-interval-training-for-ultrarunners-with-michael-rosenblat-phd) — Optimal interval duration, recovery, and VO2max training (KoopCast)
+- [A Misunderstanding of High-Intensity Interval Training](https://www.scienceofrunning.com/2017/11/a-misunderstanding-of-high-intensity-interval-training.html) — How later interval reps rely increasingly on aerobic metabolism (Science of Running)
+- [Not Hard, Not Easy: The In-Between Training Day](https://www.scienceofrunning.com/2019/07/not-hard-not-easy-the-in-between-training-day.html) — The role of moderate "in-between" training days (Science of Running)

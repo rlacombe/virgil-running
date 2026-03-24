@@ -443,3 +443,18 @@ years of consistent training may train at higher volumes.
    true beginner. Start at 50% of previous training load (Johnston) but may progress
    faster than someone with no history. Get blood work done (ferritin, hormones).
    Apply Magness's principle: safe to increase rapidly to previously maintained levels.
+
+## Sources & Further Reading
+
+### Books
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+- *Training for the Uphill Athlete* — Scott Johnston, Steve House & Kilian Jornet ([Amazon](https://www.amazon.com/Training-Uphill-Athlete-Mountain-Mountaineers/dp/1938340841))
+
+### Articles & Podcasts
+- [Training as a Female Mountain Athlete Across Life Stages](https://uphillathlete.com/female-athlete/training-as-a-female-mountain-athlete-across-life-stages/) — Menstrual cycles, pregnancy, postpartum, and menopause adaptations (Uphill Athlete)
+- [Strength Training for the Female Uphill Athlete](https://uphillathlete.com/female-athlete/strength-training-female-athlete/) — Evidence-based strength training tailored to women's biology (Uphill Athlete)
+- [New Insights on Energy Availability for Female Athletes](https://trainright.com/new-insights-on-energy-availability-for-female-athletes/) — Energy availability priorities before cycle-based optimization (CTS)
+- [Training Through Perimenopause and Menopause](https://trainright.com/trail-ultramathon-training-through-menopause/) — Navigating hormonal changes while training (CTS)
+- [5 Things Athletes Need to Know in Your 40s, 50s, and Beyond](https://trainright.com/what-older-athletes-need-to-know/) — How aging affects athletic performance (CTS)
+- [Why Older Ultrarunners Get Injured Less](https://trainright.com/running-injuries-older-ultramarathon-runners/) — Research on experience vs injury rates (CTS)
+- [Speed, Strength, Endurance, Recovery for Runners of All Ages](https://www.scienceofrunning.com/2025/05/putting-it-all-together-speed-strength-endurance-recovery-for-runners-of-all-ages.html) — Integrating training components across age groups (Science of Running)

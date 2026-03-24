@@ -287,3 +287,18 @@ systematically.
 6. **Pre-race week**: Minimize cognitive load (Marcora's research via Magness).
    Manage taper tantrums with Koop's normalizing language. Use Johnston's joy-centered
    philosophy to maintain perspective.
+
+## Sources & Further Reading
+
+### Books
+- *Science of Running* — Steve Magness ([Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946))
+- *Training Essentials for Ultrarunners* — Jason Koop ([Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566))
+
+### Articles & Podcasts
+- [3 Sports Psychology Strategies to Prevent DNFs](https://trainright.com/sports-psychology-strategies-prevent-ultramarathon-dnf/) — Mental strategies to finish tough races (CTS)
+- [How Ultrarunners Overcome Mental Fatigue](https://trainright.com/how-ultrarunners-overcome-mental-fatigue/) — How decision fatigue degrades ultra performance (CTS)
+- [Mental Skills for Ultrarunning — Part 1](https://www.jasonkoop.com/podcast/mental-skills-for-ultrarunning-part-1-with-dr-justin-ross) — Self-talk, emotional regulation, and pre-race anxiety (KoopCast)
+- [The Psychology of Mental Toughness](https://www.scienceofrunning.com/2014/05/the-psychology-of-mental-toughness.html) — Willpower as a finite resource that depletes with use (Science of Running)
+- [Being Clutch Isn't Magic — It's a Trainable Skill](https://www.scienceofrunning.com/2020/05/being-clutch-isnt-magic-its-a-trainable-skill.html) — Five characteristics of clutch performance (Science of Running)
+- [Do Hard Things: Why We Get Resilience Wrong](https://www.stevemagness.com/do-hard-things/) — Real toughness comes from embracing vulnerability (Steve Magness)
+- [Ultra Mindset — Lessons from Ultrarunners](https://uphillathlete.com/trail-running/ultra-mindset-lessons-ultrarunners/) — Grit, resilience, and mental toughness in ultrarunning (Uphill Athlete)

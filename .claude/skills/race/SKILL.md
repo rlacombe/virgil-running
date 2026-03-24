@@ -10,11 +10,11 @@ Builds a comprehensive race-day plan for the athlete's target race. The user may
 ## Step 1: Read knowledge base
 
 Read these coaching files for expert protocols:
-- `coaching/race-execution.md` — pacing, ADAPT framework, aid stations
-- `coaching/taper.md` — taper check, sharpening
-- `coaching/nutrition.md` — cal/hr, carb/hr, fluid targets, Bullseye plan
-- `coaching/heat-altitude.md` — environmental preparation
-- `coaching/mental-performance.md` — associative/dissociative strategies, crisis protocols
+- `knowledge/race-execution.md` — pacing, ADAPT framework, aid stations
+- `knowledge/taper.md` — taper check, sharpening
+- `knowledge/nutrition.md` — cal/hr, carb/hr, fluid targets, Bullseye plan
+- `knowledge/heat-altitude.md` — environmental preparation
+- `knowledge/mental-performance.md` — associative/dissociative strategies, crisis protocols
 
 ## Step 2: Gather data
 
@@ -37,7 +37,7 @@ Read `ATHLETE.md` for race details (distance, elevation, cutoffs, key cutoffs).
 - Reference Koop's "stay in the moment" pacing — focus on current segment, not the whole race
 
 ### Nutrition Plan
-- Set cal/hr and carb/hr targets based on athlete weight and expected intensity (use `coaching/nutrition.md`)
+- Set cal/hr and carb/hr targets based on athlete weight and expected intensity (use `knowledge/nutrition.md`)
 - Plan what to carry vs pick up at aid stations
 - Fluid and sodium targets (600-800mg sodium/L)
 - Gut training check — has the athlete practiced this plan in training?
@@ -59,10 +59,10 @@ Read `ATHLETE.md` for race details (distance, elevation, cutoffs, key cutoffs).
 - Is TSB trending toward fresh (>0) by race day?
 - Are the remaining planned workouts appropriate for taper?
 - Flag if volume is still too high or if intensity should be adjusted
-- Reference taper protocols from `coaching/taper.md`
+- Reference taper protocols from `knowledge/taper.md`
 
 ### Environmental Prep
-- If race is at altitude or in heat, reference `coaching/heat-altitude.md`
+- If race is at altitude or in heat, reference `knowledge/heat-altitude.md`
 - Check if acclimatization protocols have been followed
 - Flag any last-minute environmental concerns
 
