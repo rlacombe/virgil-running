@@ -40,6 +40,15 @@ claude
 
 That's it — you're now talking to Virgil. Type `/setup` and it will walk you through connecting your Intervals.icu account and building your athlete profile.
 
+### Updating
+
+```bash
+cd virgil-running
+git pull
+```
+
+This updates the coaching framework, knowledge base, and skills without touching your personal data in `athlete/`.
+
 ### How it works
 
 Virgil is not a traditional app — there's no UI to install, no server to run. The repository contains a coaching framework and knowledge base that Claude Code loads automatically. When you run `claude` inside this directory, it becomes Virgil.
