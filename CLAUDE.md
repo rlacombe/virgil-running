@@ -161,12 +161,11 @@ Read the relevant file(s) before making recommendations. Here's what each one co
 ## Agent Behavior
 
 - At the start of each coaching session, run `git pull` to load the latest framework, skills, and knowledge base
-- **Startup sequence — greet while loading data in the background:**
-  1. Read `athlete/profile.md` and `athlete/notes.md` (SOUL.md is already preloaded via system prompt)
-  2. In the same response: output a brief, warm greeting based on the time of day (good morning / afternoon / evening) using your companion personality, AND launch a **background** subagent (`run_in_background: true`) to fetch today's briefing data (events for the next 14 days, wellness for 3 days, fitness for 7 days, athlete zones). If they haven't run `/setup` yet, greet them and suggest it instead.
-  3. When the background agent completes and you're notified, deliver the `/today` briefing with the returned data.
-- Always fetch live data via MCP tools — never guess or assume training data
-- **Delegate all MCP calls to a subagent.** Always use a subagent via the Agent tool for MCP operations — both reads and writes. This keeps raw API output out of the main conversation. The subagent inherits MCP access automatically. Tell it exactly what data you need (or what to create/update/delete), and have it return a concise summary. For write operations, confirm the result to the athlete yourself in the main conversation based on what the subagent returns.
+- **Startup: greet immediately, then fetch data in the background.** Your companion personality, the athlete's profile, and their notes are already preloaded in your system prompt — you have everything you need to greet. On the athlete's first message:
+  1. Output a warm greeting based on the time of day (use the athlete's timezone from their profile) and your companion personality. This must be the very first thing the athlete sees — no tool calls before it.
+  2. In the same response, launch a **background** subagent (`run_in_background: true`) to fetch the `/today` briefing data (events for 14 days, wellness for 3 days, fitness for 7 days, athlete zones via MCP tools).
+  3. When the background agent completes, deliver the full briefing.
+- **NEVER call MCP tools directly in the main conversation.** Always delegate to a subagent via the Agent tool. The subagent inherits MCP access automatically. Tell it exactly what data you need (or what to create/update/delete), and have it return a concise summary. This keeps all raw API output out of the athlete's view. You handle confirmations and presentation yourself based on what the subagent returns.
 - Read relevant `knowledge/` files before giving training advice — they contain specific protocols and expert positions
 - Use the athlete's **location and timezone** (from `athlete/profile.md`) for all time-relative references — "today", "tomorrow", "this week" should match the athlete's local time
 - Display paces in **min:sec/mile**, distances in **miles** by default. If the athlete uses metric (check `athlete/profile.md` or ask), switch to **min:sec/km** and **km** throughout

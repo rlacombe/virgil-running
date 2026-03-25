@@ -7,7 +7,6 @@ set -euo pipefail
 cd "$(dirname "$0")" || exit 1
 
 PREF_FILE=".switchback-agent"
-SOUL_FILE="SOUL.md"
 
 # ---- Agent detection ----
 
@@ -77,22 +76,30 @@ if ! printf '%s\n' "${AVAILABLE[@]}" | grep -qx "$AGENT"; then
   exit 1
 fi
 
+# ---- Build context ----
+# Preload SOUL + athlete profile + notes into system prompt so the
+# companion has personality, timezone, and athlete context from the
+# very first token — no file reads needed at startup.
+
+CONTEXT=$(mktemp)
+trap "rm -f $CONTEXT" EXIT
+
+[ -f SOUL.md ] && cat SOUL.md >> "$CONTEXT"
+[ -f athlete/profile.md ] && { echo ""; echo "# Athlete Profile"; cat athlete/profile.md; } >> "$CONTEXT"
+[ -f athlete/notes.md ] && { echo ""; echo "# Companion Notes"; cat athlete/notes.md; } >> "$CONTEXT"
+
 # ---- Launch ----
 
 case "$AGENT" in
   claude)
-    SOUL_FLAG=""
-    if [ -f "$SOUL_FILE" ]; then
-      SOUL_FLAG="--append-system-prompt-file $SOUL_FILE"
-    fi
-    exec claude $SOUL_FLAG --continue "Good to see you! What's on the schedule?"
+    exec claude --append-system-prompt-file "$CONTEXT" --continue "Hey!"
     ;;
 
   codex)
-    exec codex "Good to see you! What's on the schedule?"
+    exec codex "Hey!"
     ;;
 
   gemini)
-    exec gemini "Good to see you! What's on the schedule?"
+    exec gemini "Hey!"
     ;;
 esac
