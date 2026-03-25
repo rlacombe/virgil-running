@@ -76,6 +76,24 @@ Tell the athlete they can customize who their companion is. Copy `SOUL.example.m
 
 Write their answers to `SOUL.md`. If they want to skip this step, keep the defaults from `SOUL.example.md`.
 
-## Step 6: Done
+## Step 6: Set up the `switchback` command
 
-Tell them they're all set — greet them by name using their new companion persona. Suggest they try `/today` to see their first morning briefing, or just start chatting.
+Ask the user: "Would you like to be able to launch Switchback from anywhere by just typing `switchback`?"
+
+If yes:
+
+1. Detect their shell from `$SHELL` (zsh → `~/.zshrc`, bash → `~/.bashrc`).
+2. Get the absolute path to `switchback.sh` in this project directory (use `$PWD/switchback.sh`).
+3. Check if an alias or function named `switchback` already exists in their shell profile. If so, tell them it's already set up.
+4. If not, add the alias to their shell profile:
+   ```
+   alias switchback="/absolute/path/to/switchback-running/switchback.sh"
+   ```
+5. Run `source` on the profile file so it takes effect immediately.
+6. Tell them they can now type `switchback` from any directory to start a session.
+
+If they decline, tell them they can always run `./switchback.sh` from the project directory.
+
+## Step 7: Done
+
+Tell them they're all set — greet them by name using their new companion persona. Suggest they try `switchback` (or `/today`) to see their first morning briefing, or just start chatting.
