@@ -4,24 +4,20 @@
 
 ## Why This Exists
 
-The best coaches and athletes in ultrarunning have spent lifetimes learning what works — on hundred-mile courses, at altitude, through seasons of trial and injury and quiet persistence. Books like [Training for the Uphill Athlete](#recommended-reading), [Training Essentials for Ultrarunners](#recommended-reading), and [Science of Running](#recommended-reading) have distilled that wisdom into frameworks any runner can learn from.
+Books like [Training for the Uphill Athlete](#recommended-reading), [Training Essentials for Ultrarunners](#recommended-reading), and [Science of Running](#recommended-reading) have distilled decades of coaching wisdom into frameworks any runner can learn from. But most of us train without a coach — and even with one, the day-to-day decisions (what to do when your HRV is down, your schedule just changed, or you're not sure if that soreness is a warning sign) fall on you.
 
-But most recreational athletes don't have access to a coach — or, if they do, their time is sparse and focused on high-level goals and critical advice, rather than the minutiae of a changing schedule.
-
-Virgil aims to bridge that gap — it reads your training data, applies established coaching frameworks, and talks you through what to do on a Tuesday morning when your HRV is down and your schedule just changed.
+Virgil reads your training data, applies those frameworks, and talks you through it.
 
 > [!IMPORTANT]
-> **Virgil is not a replacement for a human coach.** A good coach brings experience, intuition, and a relationship that no tool can replicate. If you can work with one, you should — see [Working with a Coach](#working-with-a-coach) below.
+> **Virgil is not a replacement for a human coach.** If you can work with one, you should — see [Working with a Coach](#working-with-a-coach) below. For the many runners who train alone, Virgil offers something better than a static plan: science-based guidance that adapts to how your training is actually going.
 
-Virgil can complement that relationship by handling the day-to-day details between sessions. For the many runners who train alone, it offers something better than a static plan: science-based guidance that adapts to how your training is actually going.
-
-We encourage you to [buy the books](#recommended-reading). They're excellent, they'll make you a better and more self-aware athlete, and they support the authors whose work makes this project possible.
+We encourage you to [buy the books](#recommended-reading). They're excellent, they'll make you a better and more self-aware athlete, and they support authors who've dedicated their careers to helping runners like us go after their dreams.
 
 ## Getting Started
 
 ### Prerequisites
 
-- **[Intervals.icu](https://intervals.icu)** account connected to your sports watch (Garmin, Suunto, COROS, Apple Watch, etc.). Intervals.icu is free and syncs your training data automatically.
+- **[Intervals.icu](https://intervals.icu)** account connected to your sports watch (Garmin, Suunto, COROS, Apple Watch, etc.). Intervals.icu is free, syncs your training data automatically, and is built by a small team — please consider [supporting them](https://intervals.icu).
 - **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — a command-line interface for Claude. You'll need an Anthropic account with a Claude Pro or Max subscription.
 
 ### Install Claude Code
@@ -46,9 +42,9 @@ That's it — you're now talking to Virgil. Type `/setup` and it will walk you t
 
 ### How it works
 
-Virgil is not a traditional app — there's no UI to install, no server to run. The repository contains a coaching framework (`CLAUDE.md`), a knowledge base (`knowledge/`), and a set of skills (`.claude/skills/`) that turn Claude Code into a specialized training companion. When you run `claude` inside this directory, it loads the framework automatically and becomes Virgil.
+Virgil is not a traditional app — there's no UI to install, no server to run. The repository contains a coaching framework and knowledge base that Claude Code loads automatically. When you run `claude` inside this directory, it becomes Virgil.
 
-Your personal data is stored in `ATHLETE.md` (gitignored) and stays local — it won't be shared or overwritten when you pull updates.
+Your personal data is stored in the `athlete/` folder (gitignored) and stays local — it won't be shared or overwritten when you pull updates. This includes your profile, Virgil's coaching notes, and any files you add (race reports, logs, etc.).
 
 ## What You Can Do
 
@@ -66,90 +62,22 @@ but keep it genuinely easy. If you feel flat in the first mile, no shame in
 cutting to 5.
 ```
 
-### After a workout
+### Checking your progress
 
 ```
-> How did my tempo go?
+> /check
 
-Planned: 8 mi with 3x10min at threshold
-Actual: 8.3 mi, 1:05:12, avg HR 158
+Looking at the last 14 days:
+- Volume: 42 → 51 mi (+21%) — above the 10% ramp guideline
+- Sleep: averaging 6.1h (down from 7.3h two weeks ago)
+- HRV: 3-day trend declining, now 12% below your baseline
+- TSB: -18 and falling
 
-Your tempo intervals averaged 7:42/mi at 165 bpm — right in your threshold
-zone. Solid execution. The 0.3 mi overshoot is fine. Recovery between
-intervals was clean — HR dropped to 138 within 90 seconds each time.
-
-One flag: your pace drifted from 7:35 to 7:52 across the three intervals.
-That's normal fatigue, but watch for a pattern — if drift worsens next week,
-we may need to shorten the intervals or add recovery.
-```
-
-### Weekly summary
-
-```
-> /week
-
-This week: 38.2 mi / 3,400 ft vert (planned 40 mi)
-Compliance: 95% — you skipped Thursday's strides, everything else on target
-Fitness trend: CTL 42 → 43 (building), TSB recovering toward race week
-
-Next week is your last big week before taper. Saturday's long run (18 mi,
-4,200 ft) is the key session. Prioritize sleep and easy effort through
-Wednesday to arrive fresh.
-```
-
-### Adjusting the plan
-
-```
-> I have a work trip Tuesday through Thursday — can't run those days.
-
-Looking at your week. You have a tempo Tuesday, easy Wednesday, and
-hill repeats Thursday. Here's what I'd do:
-
-- Move the tempo to Monday (swap with your scheduled easy day)
-- Tuesday–Thursday: rest. Travel fatigue is real, don't fight it.
-- Keep Friday's easy run as a shakeout
-- Saturday long run stays — you'll be fresh for it
-
-Want me to update the calendar?
-```
-
-### Understanding your training
-
-```
-> /why am I doing VO2max intervals before building my base?
-
-Two coaches approach this differently:
-
-Scott Johnston says base first — build your aerobic engine for months
-before adding intensity. His logic: "There is no shortcut to building
-the aerobic base." Most amateurs have aerobic deficiency syndrome and
-need Z2 volume before anything else.
-
-Jason Koop says VO2max first — it's the least specific workout for
-ultras, so it goes furthest from race day. His logic: raising the
-ceiling lifts everything below it. "Targeting VO2max has a greater
-lifting effect on lactate-threshold fitness than training at aerobic
-intensities has on lifting VO2max."
-
-Your AeT/AnT spread is 12% — that suggests your aerobic base could
-use work. Johnston's approach may be the better fit right now. Once
-that spread drops below 10%, intensity becomes more productive.
-```
-
-### Race-day planning
-
-```
-> /race
-
-Race: Canyons 100K — April 26, 2025
-Fitness: CTL 48, TSB trending to +6 by race day (fresh)
-
-Pacing: 14:30-15:00 overall, 18:00/mi climbs, 10:30/mi descents
-Nutrition: 260 cal/hr, 60g carbs/hr, 600mg sodium/L
-Mental: Associate on climbs and technical. Dissociate on fire roads.
-ADAPT framework if things go sideways.
-
-[Full aid station table, gear plan, and cutoff analysis...]
+This is a yellow flag. The volume jump alone is manageable, but
+combined with declining sleep and HRV, you're accumulating more
+fatigue than you're absorbing. I'd recommend swapping tomorrow's
+intervals for an easy run and prioritizing sleep this week. If HRV
+doesn't recover by Friday, consider making this a recovery week.
 ```
 
 ### Just ask
@@ -197,9 +125,7 @@ The training framework draws from these books. We recommend them for any ultraru
 - **Training Essentials for Ultrarunners** by Jason Koop — [Amazon](https://www.amazon.com/Training-Essentials-Ultrarunning-Compete-Ultramarathon/dp/1937715566) | Coaching: [Jason Koop](https://jasonkoop.com) · [CTS](https://trainright.com)
 - **Science of Running** by Steve Magness — [Amazon](https://www.amazon.com/Science-Running-Efficiently-Ultramarathons-Sprints/dp/0615942946) | [stevemagness.com](https://stevemagness.com) · [scienceofrunning.com](https://scienceofrunning.com)
 
-We are not affiliated with any of these authors or organizations. If you can work with them directly, you should — Virgil is not a substitute for a real coaching relationship.
-
-**[Intervals.icu](https://intervals.icu)** is the training platform that powers the data layer. It's free, but please consider supporting it — it's an incredible tool built by a small team.
+This project is not affiliated with any of these authors or organizations. If you can work with them directly, you should — Virgil is not a substitute for a real coaching relationship.
 
 ## Working with a Coach
 
@@ -207,9 +133,9 @@ The best thing you can do for your running is work with a real coach. A good coa
 
 Virgil is designed to complement that relationship, not replace it. Between coaching sessions, it can handle the daily details: adjusting a workout when your schedule changes, reviewing an activity, or explaining why a training block is structured the way it is. Some coaches may find it useful in their own practice.
 
-**If you're a coach** and you're curious about how Virgil could support your athletes, please [reach out](https://github.com/rlacombe/virgil-running/issues) — we'd love to hear from you.
+**If you're a coach** and you're curious about how Virgil could support your athletes, please feel free to adapt it in your daily practice! [Reach out](https://github.com/rlacombe/virgil-running/issues), I'd love to help.
 
-**If you're looking for a coach**, the authors whose work powers this project all offer coaching services:
+**If you're looking for a coach**, the authors of the [recommended books](#recommended-reading) above all offer coaching services:
 - [Evoke Endurance](https://evokeendurance.com) (Scott Johnston)
 - [Jason Koop / CTS](https://jasonkoop.com)
 - [Uphill Athlete](https://uphillathlete.com)
