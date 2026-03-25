@@ -8,4 +8,6 @@ dist/
 .claude/settings.local.json
 data/
 sleep-routine.md
-athlete/
+athlete/*
+!athlete/.gitignore
+!athlete/profile.example.md

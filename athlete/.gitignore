@@ -1,0 +1,4 @@
+# Ignore all personal data in this directory
+*
+!.gitignore
+!profile.example.md
