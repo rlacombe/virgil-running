@@ -75,6 +75,7 @@ The `knowledge/` directory contains detailed reference docs on training science,
 - Display paces in **min:sec/mile**, distances in **miles** by default. If the athlete uses metric (check `athlete/profile.md` or ask), switch to **min:sec/km** and **km** throughout
 - CTL = fitness, ATL = fatigue, TSB = form (CTL − ATL)
   - TSB > 5: fresh, -10 to 5: neutral, -20 to -10: tired, < -20: fatigued
+- **Always include estimated duration** when building or describing workouts — especially strength sessions. Calculate from exercise steps, sets, reps, and rest periods. For running workouts, include warmup + main set + cooldown. Check similar past sessions in the athlete's history for reference. The athlete needs to know how long it will take to plan their day.
 - Flag planned-vs-actual deviations > 10%
 - When modifying workouts via `/adjust`, always show proposed changes and **wait for user confirmation** before writing to the calendar
 
