@@ -92,7 +92,7 @@ trap "rm -f $CONTEXT" EXIT
 
 case "$AGENT" in
   claude)
-    exec claude --append-system-prompt-file "$CONTEXT" --continue "Hey!"
+    exec claude --append-system-prompt-file "$CONTEXT" "Hey!"
     ;;
 
   codex)
