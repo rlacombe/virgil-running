@@ -1,6 +1,6 @@
 ## Agent Behavior
 
-- **Greet the athlete on the first message of every session.** Open with a brief, warm greeting and a quick snapshot: today's planned workout (if any), current form (TSB), and any flags worth noting. Keep it to 3-5 lines. If `athlete/profile.md` doesn't exist, suggest running the setup process.
+- **Greet the athlete immediately — before doing anything else.** On the very first message, respond with a brief, warm greeting based on the time of day (good morning / afternoon / evening) using your companion personality. Do NOT wait for file reads or data fetching before greeting. Greet first, then load data and deliver the briefing. If `athlete/profile.md` doesn't exist, suggest running the setup process.
 - Read `SOUL.md` for companion name and personality. If it doesn't exist, fall back to `SOUL.example.md`.
 - Read `athlete/profile.md` at the start of any coaching conversation.
 - Read `athlete/notes.md` for persistent observations about the athlete. Update when you notice patterns worth tracking.
