@@ -18,17 +18,15 @@ We encourage you to [buy the books](#recommended-reading). They're excellent, th
 ### Prerequisites
 
 - **[Intervals.icu](https://intervals.icu)** account connected to your sports watch (Garmin, Suunto, COROS, Apple Watch, etc.). Intervals.icu is free, syncs your training data automatically, and is built by a small team — please consider [becoming a Supporter](https://intervals.icu).
-- **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — a command-line interface for Claude. You'll need an Anthropic account with a Claude Pro or Max subscription.
+- **An AI coding agent** — Switchback works with any of these (install at least one):
 
-### Install Claude Code
+| Agent | Install | Features |
+|-------|---------|----------|
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | `npm install -g @anthropic-ai/claude-code` | Full experience — slash commands, session memory, MCP |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `npm install -g @anthropic-ai/gemini-cli` | Core companion + live data via MCP |
+| [Codex CLI](https://github.com/openai/codex) | `npm install -g @openai/codex` | Core companion (no live data yet) |
 
-If you don't have Claude Code yet:
-
-```bash
-npm install -g @anthropic-ai/claude-code
-```
-
-This gives you the `claude` command. On first run, it will walk you through signing in to your Anthropic account. See the [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code) for details.
+The launcher auto-detects which agents you have installed. If you have multiple, it asks you to pick one and remembers your choice.
 
 ### Set up Switchback
 
@@ -38,7 +36,7 @@ cd switchback-running
 ./switchback.sh
 ```
 
-On first run, type `/setup` — your companion will walk you through connecting your Intervals.icu account, building your athlete profile, and choosing a name and personality for your companion.
+On first run, ask your companion to help you set up (or type `/setup` in Claude Code) — it will walk you through connecting your Intervals.icu account, building your athlete profile, and choosing a name and personality for your companion.
 
 To make `switchback` available from anywhere, add an alias to your shell profile:
 
@@ -60,7 +58,9 @@ This updates the coaching framework, knowledge base, and skills without touching
 
 ### How it works
 
-Switchback is not a traditional app — there's no UI to install, no server to run. The repository contains a coaching framework and knowledge base that Claude Code loads automatically. When you run `switchback`, it picks up where you left off — your companion greets you and delivers a morning briefing.
+Switchback is not a traditional app — there's no UI to install, no server to run. The repository contains a companion framework and knowledge base that your AI agent loads automatically. When you run `switchback`, it picks up where you left off — your companion greets you and delivers a morning briefing.
+
+The companion framework lives in `COMPANION.md` and is generated into agent-specific instruction files (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`) that each agent discovers automatically.
 
 Your personal data stays local and is never committed — this includes `athlete/` (your profile and coaching notes) and `SOUL.md` (your companion's name and personality). See `SOUL.example.md` for the default persona.
 
