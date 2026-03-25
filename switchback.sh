@@ -85,14 +85,14 @@ case "$AGENT" in
     if [ -f "$SOUL_FILE" ]; then
       SOUL_FLAG="--append-system-prompt-file $SOUL_FILE"
     fi
-    exec claude $SOUL_FLAG --continue "Hello! Read SOUL.md and athlete/profile.md, then greet me and give me today's briefing."
+    exec claude $SOUL_FLAG --continue "Good to see you! What's on the schedule?"
     ;;
 
   codex)
-    exec codex "Hello! Read SOUL.md and athlete/profile.md, then greet me and give me today's briefing."
+    exec codex "Good to see you! What's on the schedule?"
     ;;
 
   gemini)
-    exec gemini "Hello! Read SOUL.md and athlete/profile.md, then greet me and give me today's briefing."
+    exec gemini "Good to see you! What's on the schedule?"
     ;;
 esac
