@@ -1,12 +1,12 @@
 # Switchback Running
 
-An AI-powered ultrarunning training companion. Switchback connects to your [Intervals.icu](https://intervals.icu) account — your training calendar, wellness data, and fitness trends — and uses [established exercise science](#recommended-reading) to help you make the most of your training and prepare for your next trail race. Built on [Intervals.icu](https://intervals.icu) and [Claude Code](https://docs.anthropic.com/en/docs/claude-code), your companion works through natural conversation: reviewing workouts, adjusting plans, flagging risks, and answering questions about your training.
+An AI-powered ultrarunning training companion. Switchback connects to your [Intervals.icu](https://intervals.icu) account — your training calendar, wellness data, and fitness trends — and uses [established exercise science](#recommended-reading) to help you train smarter and prepare for your next trail race. Built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code), it works through natural conversation: reviewing workouts, adjusting plans, flagging risks, and answering questions about your training.
 
 ## Why This Exists
 
-Books like [Training for the Uphill Athlete](#recommended-reading), [Training Essentials for Ultrarunners](#recommended-reading), and [Science of Running](#recommended-reading) have distilled decades of coaching wisdom into frameworks any runner can learn from. But most of us train without a coach — and even with one, the day-to-day decisions (what to do when your HRV is down, your schedule just changed, or you're not sure if that soreness is a warning sign) fall on you.
+Books like [Training for the Uphill Athlete](#recommended-reading), [Training Essentials for Ultrarunners](#recommended-reading), [Science of Running](#recommended-reading), and [The Happy Runner](#recommended-reading) have distilled decades of coaching wisdom into frameworks any runner can learn from. But most of us train without a coach — and even with one, the day-to-day decisions (what to do when your HRV is down, your schedule just changed, or you're not sure if that soreness is a warning sign) fall on you.
 
-Switchback reads your training data, applies those frameworks, and talks you through it.
+Switchback reads your training data, applies those frameworks, and helps you make better decisions day to day.
 
 > [!IMPORTANT]
 > **Switchback is not a replacement for a human coach.** If you can work with one, you should — see [Working with a Coach](#working-with-a-coach) below. For the many runners who train alone, it offers something better than a static plan: science-based guidance that adapts to how your training is actually going.
@@ -17,7 +17,7 @@ We encourage you to [buy the books](#recommended-reading). They're excellent, th
 
 ### Prerequisites
 
-- **[Intervals.icu](https://intervals.icu)** account connected to your sports watch (Garmin, Suunto, COROS, Apple Watch, etc.). Intervals.icu is free, syncs your training data automatically, and is built by a small team — please consider [supporting them](https://intervals.icu).
+- **[Intervals.icu](https://intervals.icu)** account connected to your sports watch (Garmin, Suunto, COROS, Apple Watch, etc.). Intervals.icu is free, syncs your training data automatically, and is built by a small team — please consider [becoming a Supporter](https://intervals.icu).
 - **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — a command-line interface for Claude. You'll need an Anthropic account with a Claude Pro or Max subscription.
 
 ### Install Claude Code
@@ -35,10 +35,19 @@ This gives you the `claude` command. On first run, it will walk you through sign
 ```bash
 git clone https://github.com/rlacombe/switchback-running.git
 cd switchback-running
-claude
+./switchback.sh
 ```
 
-That's it — type `/setup` and your companion will walk you through connecting your Intervals.icu account, building your athlete profile, and choosing a name and personality for your companion.
+On first run, type `/setup` — your companion will walk you through connecting your Intervals.icu account, building your athlete profile, and choosing a name and personality for your companion.
+
+To make `switchback` available from anywhere, add an alias to your shell profile:
+
+```bash
+echo 'alias switchback="/path/to/switchback-running/switchback.sh"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Then just run `switchback` from any directory.
 
 ### Updating
 
@@ -51,7 +60,7 @@ This updates the coaching framework, knowledge base, and skills without touching
 
 ### How it works
 
-Switchback is not a traditional app — there's no UI to install, no server to run. The repository contains a coaching framework and knowledge base that Claude Code loads automatically. When you run `claude` inside this directory, it becomes your training companion.
+Switchback is not a traditional app — there's no UI to install, no server to run. The repository contains a coaching framework and knowledge base that Claude Code loads automatically. When you run `switchback`, it picks up where you left off — your companion greets you and delivers a morning briefing.
 
 Your personal data stays local and is never committed — this includes `athlete/` (your profile and coaching notes) and `SOUL.md` (your companion's name and personality). See `SOUL.example.md` for the default persona.
 
@@ -89,15 +98,32 @@ intervals for an easy run and prioritizing sleep this week. If HRV
 doesn't recover by Friday, consider making this a recovery week.
 ```
 
+### Race readiness
+
+```
+> Am I on track to run UTMB in 4 months?
+
+Let me pull your data and check...
+
+Based on 12 weeks of training history:
+- Current fitness (CTL): 52 — you'll want 65-75 for UTMB
+- Weekly volume: 45 mi avg — target is 55-65 mi with significant vert
+- Vert: 4,200 ft/week — UTMB demands suggest building to 8,000-10,000
+- Long run: longest is 3:45 — you'll need multiple 5-6h efforts
+
+You have time, but it's tight. Here's what I'd prioritize over the
+next 16 weeks...
+```
+
 ### Just ask
 
 You're not limited to slash commands. Ask anything:
 
-- *"Am I ready for a 50K in October?"*
 - *"Should I run or cross-train tomorrow?"*
 - *"What's my vert progression been like this month?"*
 - *"Is my HRV trend concerning?"*
 - *"What does Scott Johnston think about weighted hiking?"*
+- *"Build me a 12-week plan for a mountain 50K"*
 
 ## Skills
 
