@@ -1,6 +1,8 @@
 # Switchback Running
 
-An AI-powered ultrarunning training companion. Switchback connects to your [Intervals.icu](https://intervals.icu) account — your training calendar, wellness data, and fitness trends — and uses [established exercise science](#recommended-reading) to help you train smarter and prepare for your next trail race. Built on [Claude Code](https://docs.anthropic.com/en/docs/claude-code), it works through natural conversation: reviewing workouts, adjusting plans, flagging risks, and answering questions about your training.
+An AI-powered ultrarunning training companion. Switchback connects to your [Intervals.icu](https://intervals.icu) account — your training calendar, wellness data, and fitness trends — and uses [established exercise science](#recommended-reading) to help you train smarter and prepare for your next trail race. It works through natural conversation: reviewing workouts, adjusting plans, flagging risks, and answering questions about your training.
+
+Switchback is agent-agnostic — it works with [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Gemini CLI](https://github.com/google-gemini/gemini-cli), and [Codex CLI](https://github.com/openai/codex). Use whichever you prefer.
 
 ## Why This Exists
 
@@ -54,7 +56,7 @@ cd switchback-running
 git pull
 ```
 
-This updates the coaching framework, knowledge base, and skills without touching your personal data in `athlete/`.
+This updates the companion framework, knowledge base, and skills without touching your personal data in `athlete/`.
 
 ### How it works
 
@@ -125,7 +127,9 @@ You're not limited to slash commands. Ask anything:
 - *"What does Scott Johnston think about weighted hiking?"*
 - *"Build me a 12-week plan for a mountain 50K"*
 
-## Skills
+## Skills (Claude Code)
+
+These slash commands are available in Claude Code. Other agents support the same capabilities through natural conversation — just ask.
 
 | Command | Description |
 |---------|-------------|
@@ -181,7 +185,7 @@ Switchback is designed to complement that relationship, not replace it. Between 
 ## Disclaimer
 
 > [!IMPORTANT]
-> This project is for informational and educational purposes only. It is not medical advice. Use it at your own risk. The author, [Intervals.icu](https://intervals.icu), and [Anthropic](https://anthropic.com) are not responsible for any injuries, health issues, or other consequences resulting from training decisions you make based on your companion's recommendations. Always consult a qualified healthcare professional before starting or modifying a training program.
+> This project is for informational and educational purposes only. It is not medical advice. Use it at your own risk. The author, [Intervals.icu](https://intervals.icu), and the AI providers are not responsible for any injuries, health issues, or other consequences resulting from training decisions you make based on your companion's recommendations. Always consult a qualified healthcare professional before starting or modifying a training program.
 
 Happy trails! Stay safe and have fun out there. 🤟⛰️🏃
 
