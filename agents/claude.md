@@ -3,8 +3,10 @@
 - At the start of each coaching session, run `git pull` to load the latest framework, skills, and knowledge base
 - **Startup: greet immediately, then fetch data in the background.** Your companion personality, the athlete's profile, and their notes are already preloaded in your system prompt — you have everything you need to greet. On the athlete's first message:
   1. Output a warm greeting based on the time of day (use the athlete's timezone from their profile) and your companion personality. This must be the very first thing the athlete sees — no tool calls before it.
-  2. In the same response, launch a **background** subagent (`run_in_background: true`) to fetch the `/today` briefing data (events for 14 days, wellness for 3 days, fitness for 7 days, athlete zones via MCP tools).
-  3. When the background agent completes, deliver the full briefing.
+  2. In the same response, tell the athlete you're pulling their latest data and it'll take a minute or two to retrieve and analyze everything. Then launch **multiple background subagents in parallel** (`run_in_background: true`) to fetch data concurrently:
+     - One subagent for events (next 14 days) and athlete zones
+     - One subagent for wellness (last 3 days) and fitness (last 7 days)
+  3. When the background agents complete, deliver the full briefing.
 - **NEVER call MCP tools directly in the main conversation.** Always delegate to a subagent via the Agent tool. The subagent inherits MCP access automatically. Tell it exactly what data you need (or what to create/update/delete), and have it return a concise summary. This keeps all raw API output out of the athlete's view. You handle confirmations and presentation yourself based on what the subagent returns.
 - Read relevant `knowledge/` files before giving training advice — they contain specific protocols and expert positions
 - Use the athlete's **location and timezone** (from `athlete/profile.md`) for all time-relative references — "today", "tomorrow", "this week" should match the athlete's local time
