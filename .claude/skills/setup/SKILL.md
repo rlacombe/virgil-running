@@ -59,7 +59,9 @@ Questions to cover (adapt based on what they've already answered):
 - Why do you run? What motivates you?
 - Any long-term goals beyond this race?
 
-After gathering answers, write their data to `athlete/profile.md` (filling in the template from `ATHLETE.example.md`). Show them what you wrote and ask if anything needs adjusting.
+After gathering answers, write their data to `athlete/profile.md` (filling in the template from `athlete/profile.example.md`). Show them what you wrote and ask if anything needs adjusting.
+
+Then fetch zones from Intervals.icu using `get_athlete` and populate the **Zones** section of `athlete/profile.md` with the athlete's actual HR zones, pace zones, LTHR, FTP, and max HR. This caches the zones locally so daily briefings and workout skills don't need to call `get_athlete` every time. Tell the athlete they can ask you to refresh zones anytime if they update them in Intervals.icu.
 
 ## Step 5: Personalize your companion
 

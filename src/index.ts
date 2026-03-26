@@ -50,7 +50,7 @@ const ATHLETE_FIELDS = [
 ];
 
 const ACTIVITY_FIELDS = [
-  "id", "name", "type", "start_date_local", "distance", "moving_time",
+  "id", "name", "type", "start_date_local", "updated", "distance", "moving_time",
   "elapsed_time", "avg_hr", "max_hr", "total_elevation_gain",
   "icu_training_load", "icu_intensity", "icu_efficiency_factor",
   "average_speed", "description", "pace", "icu_average_watts",

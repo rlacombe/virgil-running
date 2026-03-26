@@ -27,7 +27,7 @@ Read the relevant file(s). If the question spans multiple topics, read all of th
 ## Step 2: Gather athlete context (if relevant)
 
 If the question relates to the athlete's current training, fetch data to personalize the explanation:
-- `get_athlete` — their zones, so you can reference actual numbers
+- Zones are cached in `athlete/profile.md` — use those to reference actual numbers
 - `get_fitness` — their current CTL/ATL/TSB
 - `get_activities` or `get_events` — recent training context
 

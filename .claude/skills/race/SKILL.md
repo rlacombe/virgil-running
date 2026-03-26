@@ -19,13 +19,12 @@ Read these coaching files for expert protocols:
 ## Step 2: Gather data
 
 Fetch in parallel:
-- `get_athlete` — zones, weight, sport settings
 - `get_fitness` for the last 21 days — CTL/ATL/TSB trend into race day
 - `get_events` for the next 14 days — remaining workouts and taper check
 - `get_activities` for the last 30 days — recent training volume and long runs
 - `get_wellness` for the last 7 days — sleep, HRV, fatigue trends
 
-Read `athlete/profile.md` for race details (distance, elevation, cutoffs, key cutoffs).
+Read `athlete/profile.md` for race details (distance, elevation, cutoffs, key cutoffs) and cached zones.
 
 ## Step 3: Build the race plan
 

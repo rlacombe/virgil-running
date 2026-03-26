@@ -22,9 +22,7 @@ Fetch in parallel:
 - `get_fitness` for the last 30 days — CTL/ATL/TSB progression
 - `get_activities` for the last 30 days — actual volume, frequency, intensity
 - `get_events` for the last 30 days — planned vs completed (compliance)
-- `get_athlete` — profile context
-
-Read `athlete/profile.md` for injury history, age, and known weaknesses.
+Read `athlete/profile.md` for injury history, age, known weaknesses, and cached zones.
 
 ## Step 3: Analyze
 

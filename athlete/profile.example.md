@@ -14,6 +14,33 @@
 - **Cross-training:** [other sports — bike, swim, ski, etc.]
 - **Goals:** [short-term and long-term]
 
+## Zones
+
+<!-- Cached from Intervals.icu via `get_athlete`. Refresh with `/setup` or ask your companion to update. -->
+
+### Heart Rate Zones
+| Zone | Name | BPM Range |
+|------|------|-----------|
+| Z1 | Recovery | [from get_athlete] |
+| Z2 | Aerobic | [from get_athlete] |
+| Z3 | Tempo | [from get_athlete] |
+| Z4 | Threshold | [from get_athlete] |
+| Z5 | VO2max | [from get_athlete] |
+
+### Pace Zones
+| Zone | Name | Pace Range |
+|------|------|------------|
+| Z1 | Recovery | [from get_athlete] |
+| Z2 | Aerobic | [from get_athlete] |
+| Z3 | Tempo | [from get_athlete] |
+| Z4 | Threshold | [from get_athlete] |
+| Z5 | VO2max | [from get_athlete] |
+
+### Key Thresholds
+- **LTHR:** [from get_athlete]
+- **FTP:** [from get_athlete] (if applicable)
+- **Max HR:** [from get_athlete]
+
 ## Race Details
 
 - **Race:** [target race name]

@@ -17,7 +17,7 @@ Fetch in parallel:
 - `get_events` for today (oldest=today, newest=today) — planned workouts
 - `get_wellness` for today (oldest=today, newest=today) — sleep, HRV, RHR, fatigue, mood
 - `get_fitness` for the last 7 days — CTL/ATL/TSB trend
-- `get_athlete` — zones for context
+- Zones are cached in `athlete/profile.md` — skip `get_athlete` unless zones are missing
 
 ## Step 3: Write the coaching note
 

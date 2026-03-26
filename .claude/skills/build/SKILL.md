@@ -20,7 +20,6 @@ Read these coaching files to inform workout design:
 ## Step 2: Gather context
 
 Fetch in parallel:
-- `get_athlete` — zones (HR, pace, power) for prescribing intensities
 - `get_fitness` for the last 14 days — current CTL/ATL/TSB trend
 - `get_activities` for the last 14 days — recent training load and volume
 - `get_events` for the date range the user is asking about — existing planned workouts
@@ -31,7 +30,7 @@ Fetch in parallel:
 Based on the user's request and the data:
 - Respect current fitness level and volume progression (no >10% weekly increase)
 - Follow periodization principles (easy/hard alternation, step-back weeks every 3–4 weeks)
-- Use the athlete's actual zones from `get_athlete` for intensity prescription
+- Use the athlete's actual zones from `athlete/profile.md` for intensity prescription
 - If planning multiple weeks, include a step-back week at ~70% volume every 3–4 weeks
 - Consider the race date if one is set — work backward from taper
 - Check for existing events in the date range and work around them (or note conflicts)
