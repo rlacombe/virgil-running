@@ -8,9 +8,5 @@ dist/
 .claude/settings.local.json
 !.gemini/
 .switchback-agent
-SOUL.md
 data/
 sleep-routine.md
-athlete/*
-!athlete/.gitignore
-!athlete/profile.example.md
