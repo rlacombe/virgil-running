@@ -45,7 +45,7 @@ Make a test API call using `get_wellness` for today. If it succeeds, tell the us
 
 ## Step 4: Build the athlete profile
 
-Tell the user you're going to ask a few questions to personalize the coaching. Ask them conversationally — one or two questions at a time, not a long form. Create the `athlete/` directory if it doesn't exist, then use their answers to fill in `athlete/profile.md` (copied from `ATHLETE.example.md` if it doesn't exist yet). Also create an empty `athlete/notes.md` for the companion's persistent observations. This folder is gitignored — their personal data stays local and won't be overwritten by `git pull`.
+Tell the user you're going to ask a few questions to personalize the coaching. Ask them conversationally — one or two questions at a time, not a long form. Create the `athlete/` directory if it doesn't exist, then use their answers to fill in `athlete/profile.md` (copied from `athlete/profile.example.md` if it doesn't exist yet). Also create an empty `athlete/notes.md` for the companion's persistent observations.
 
 Questions to cover (adapt based on what they've already answered):
 - What's your name?
@@ -63,7 +63,28 @@ After gathering answers, write their data to `athlete/profile.md` (filling in th
 
 Then fetch zones from Intervals.icu using `get_athlete` and populate the **Zones** section of `athlete/profile.md` with the athlete's actual HR zones, pace zones, LTHR, FTP, and max HR. This caches the zones locally so daily briefings and workout skills don't need to call `get_athlete` every time. Tell the athlete they can ask you to refresh zones anytime if they update them in Intervals.icu.
 
-## Step 5: Personalize your companion
+## Step 5: Configure fork for personal data
+
+> **Note:** The install script (`install.sh`) handles this automatically. This step is a fallback for users who set up manually.
+
+Check if the user's repo is a fork (i.e., has a different `origin` than `rlacombe/switchback-running`). If it is:
+
+1. **Check repo visibility.** Run `gh repo view --json visibility -q .visibility` on the origin repo. If the result is `PUBLIC`, **stop and warn the athlete**: "Your fork is public — your personal training data (health metrics, location, API keys) would be visible to anyone. Please make it private first: go to your repo's Settings → General → Danger Zone → Change visibility → Private." Do NOT proceed with un-ignoring personal data until the repo is private.
+2. **Add upstream remote** if not already set, with push disabled to prevent accidentally pushing personal data to the public repo:
+   ```
+   git remote add upstream https://github.com/rlacombe/switchback-running.git
+   git remote set-url --push upstream DISABLE
+   ```
+   This allows `git pull upstream main` for framework updates but blocks any `git push upstream`.
+3. **Un-ignore personal data** — remove these lines from `.gitignore`:
+   - `SOUL.md`
+   - `athlete/*` and `!athlete/.gitignore` and `!athlete/profile.example.md`
+4. **Remove `athlete/.gitignore`** — it's no longer needed since the parent `.gitignore` no longer excludes the directory.
+5. Tell the user: "Your fork is set up to track your personal data. Your profile, zones, companion persona, and coaching notes will be committed to your private repo — so you can launch Switchback from any machine."
+
+If it's **not** a fork (origin is `rlacombe/switchback-running`), tell them: "You cloned the main repo directly. Your personal data will stay local and won't be backed up. Consider forking to a private repo instead — see the README for instructions."
+
+## Step 6: Personalize your companion
 
 Tell the athlete they can customize who their companion is. Copy `SOUL.example.md` to `SOUL.md` as a starting point, then ask:
 
@@ -78,7 +99,7 @@ Tell the athlete they can customize who their companion is. Copy `SOUL.example.m
 
 Write their answers to `SOUL.md`. If they want to skip this step, keep the defaults from `SOUL.example.md`.
 
-## Step 6: Set up the `switchback` command
+## Step 7: Set up the `switchback` command
 
 Ask the user: "Would you like to be able to launch Switchback from anywhere by just typing `switchback`?"
 
@@ -96,6 +117,6 @@ If yes:
 
 If they decline, tell them they can always run `./switchback.sh` from the project directory.
 
-## Step 7: Done
+## Step 8: Done
 
 Tell them they're all set — greet them by name using their new companion persona. Suggest they try `switchback` (or `/today`) to see their first morning briefing, or just start chatting.

@@ -30,33 +30,34 @@ We encourage you to [buy the books](#recommended-reading). They're excellent, th
 
 The launcher auto-detects which agents you have installed. If you have multiple, it asks you to pick one and remembers your choice.
 
-### Set up Switchback
+### Install
+
+One command does everything — forks the repo to your GitHub (private), clones it, installs dependencies, sets up the shell alias, and launches your companion for first-time setup:
 
 ```bash
-git clone https://github.com/rlacombe/switchback-running.git
-cd switchback-running
-./switchback.sh
+curl -fsSL https://raw.githubusercontent.com/rlacombe/switchback-running/main/install.sh | bash
 ```
 
-On first run, ask your companion to help you set up (or type `/setup` in Claude Code) — it will walk you through connecting your Intervals.icu account, building your athlete profile, and choosing a name and personality for your companion.
+Requires [Node.js](https://nodejs.org) (LTS), [GitHub CLI](https://cli.github.com) (`gh auth login`), and at least one AI agent (see prerequisites above).
 
-To make `switchback` available from anywhere, add an alias to your shell profile:
+The installer creates a **private fork** under your GitHub account — your training data (athlete profile, zones, companion persona, coaching notes) lives there and is never pushed to the public repo. After install, your companion walks you through connecting Intervals.icu and building your athlete profile.
 
-```bash
-echo 'alias switchback="/path/to/switchback-running/switchback.sh"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-Then just run `switchback` from any directory.
+Then just run `switchback` from anywhere.
 
 ### Updating
 
+Your fork tracks the upstream repo for framework updates (knowledge base, skills, companion logic). To pull the latest:
+
 ```bash
-cd switchback-running
-git pull
+git pull upstream main
 ```
 
-This updates the companion framework, knowledge base, and skills without touching your personal data in `athlete/`.
+This updates the companion framework without touching your personal data in `athlete/` or `SOUL.md`. If setup didn't add the upstream remote, you can add it manually:
+
+```bash
+git remote add upstream https://github.com/rlacombe/switchback-running.git
+git remote set-url --push upstream DISABLE   # prevent accidental pushes to public repo
+```
 
 ### How it works
 
@@ -64,7 +65,7 @@ Switchback is not a traditional app — there's no UI to install, no server to r
 
 The companion framework lives in `COMPANION.md` and is generated into agent-specific instruction files (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`) that each agent discovers automatically.
 
-Your personal data stays local and is never committed — this includes `athlete/` (your profile and coaching notes) and `SOUL.md` (your companion's name and personality). See `SOUL.example.md` for the default persona.
+Your personal data — `athlete/` (profile, zones, coaching notes) and `SOUL.md` (companion persona) — lives in your private fork and is committed to git. This means you can launch Switchback from any machine, including cloud environments, and your training history is preserved over time. See `SOUL.example.md` for the default persona.
 
 ## What You Can Do
 

@@ -1,6 +1,6 @@
 ## Agent Behavior
 
-- At the start of each coaching session, run `git pull` to load the latest framework, skills, and knowledge base
+- At the start of each coaching session, run `git pull upstream main` to load the latest framework, skills, and knowledge base (falls back to `git pull` if no upstream remote is set)
 - **Startup: greet immediately, then fetch data.** Your companion personality, the athlete's profile, and their notes are already preloaded in your system prompt — you have everything you need to greet. On the athlete's first message:
   1. Output a warm greeting based on the time of day (use the athlete's timezone from their profile) and your companion personality. Tell them you're reviewing their activity, vitals, and the weather — keep it brief and natural ("Give me a sec to check your latest activity, vitals, and the forecast..."). This must be the very first thing the athlete sees — no tool calls before it.
   2. Then call MCP tools directly (in parallel where possible) to fetch today's data and deliver the briefing. Zones are cached in `athlete/profile.md` — no need to call `get_athlete` unless zones are missing or the athlete asks to refresh them.
