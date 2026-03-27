@@ -44,7 +44,7 @@ That's it. The installer will:
 - Install everything and set up the `switchback` command
 - Launch your companion for first-time setup — it'll walk you through connecting Intervals.icu, building your athlete profile, and choosing a name and personality for your companion
 
-After that, just type `switchback` from anywhere to start a session.
+**After that, just type `switchback` from anywhere to start a session.**
 
 ### Updating
 
@@ -62,6 +62,8 @@ This updates the companion framework without touching your personal data.
 Switchback is not a traditional app — there's no UI, no server to run. The repository is a knowledge base and companion framework that your AI agent reads automatically. When you run `switchback`, your companion greets you, pulls your latest training data from Intervals.icu, and picks up where you left off.
 
 Your personal data (athlete profile, training zones, coaching notes, companion persona) lives in your private copy and is never shared publicly. You can launch Switchback from any machine — your data travels with you.
+
+**Make it yours.** During setup, you choose a name and personality for your companion. By default your companion is called Virgil, inspired by Dante's faithful companion on his journey to hell and back. You can rename it after anyone who motivates you — a training partner, a runner you admire, that aid station volunteer who saved your race at mile 40. You also choose the tone, humor, and coaching style that work best for you.
 
 ## What You Can Do
 
