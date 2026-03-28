@@ -34,7 +34,7 @@ cutting to 5.
 ### Checking your progress
 
 ```
-> /check
+> How's my training been going?
 
 Looking at the last 14 days:
 - Volume: 42 → 51 mi (+21%) — above the 10% ramp guideline
@@ -68,12 +68,12 @@ next 16 weeks...
 
 ### Just ask
 
-You're not limited to slash commands. Ask anything:
+You can ask your companion anything about your training:
 
 - *"Should I run or cross-train tomorrow?"*
 - *"What's my vert progression been like this month?"*
 - *"Is my HRV trend concerning?"*
-- *"What does Scott Johnston think about weighted hiking?"*
+- *"How should I fuel for a 50K?"*
 - *"Build me a 12-week plan for a mountain 50K"*
 
 ### Make it yours
