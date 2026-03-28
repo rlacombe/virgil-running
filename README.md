@@ -29,8 +29,6 @@ We encourage you to [buy the books](#recommended-reading). They're excellent, th
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `npm install -g @google/gemini-cli` | Full experience with live data |
 | [Codex CLI](https://github.com/openai/codex) | `npm install -g @openai/codex` | Core companion (no live data yet) |
 
-3. **[Node.js](https://nodejs.org)** (LTS) and the **[GitHub CLI](https://cli.github.com)** — the installer needs both. If you're not sure whether you have them, the installer will tell you.
-
 ### Install
 
 Open a terminal and run:
